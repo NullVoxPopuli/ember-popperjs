@@ -1,7 +1,7 @@
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 import { setComponentTemplate } from '@ember/component';
-import { registerDestructor } from '@ember/destroyable';
+import { isDestroyed, isDestroying, registerDestructor } from '@ember/destroyable';
 import { action } from '@ember/object';
 import { hbs } from 'ember-cli-htmlbars';
 
@@ -9,10 +9,12 @@ import { createPopper } from '@popperjs/core';
 
 import { modifier } from './-function-modifier';
 
+import type { Options } from '@popperjs/core';
 import type Popper from '@popperjs/core';
 
 interface Args {
   placement?: Popper.Placement;
+  options?: Options | ((reference: HTMLElement, popover: HTMLElement) => Options);
 }
 
 /**
@@ -30,55 +32,66 @@ interface Args {
  *
  */
 export class PopperJS extends Component<Args> {
-  declare _triggerElement?: HTMLElement;
+  declare _referenceElement?: HTMLElement;
   declare _popoverElement?: HTMLElement;
   declare _popper?: Popper.Instance;
 
+  // This is yielded out, but it's not public API
   @tracked isShown = false;
 
   trigger = modifier((element: HTMLElement) => {
-    this._triggerElement = element;
+    this._referenceElement = element;
 
     if (this._popoverElement) this.positionPopover();
 
     return () => {
-      this._triggerElement = undefined;
+      this._referenceElement = undefined;
       this._popper?.destroy();
+      this.isShown = false;
     };
   });
 
   popover = modifier((element: HTMLElement) => {
     this._popoverElement = element;
 
-    if (this._triggerElement) this.positionPopover();
+    if (this._referenceElement) this.positionPopover();
 
     return () => {
       this._popoverElement = undefined;
       this._popper?.destroy();
+      this.isShown = false;
     };
   });
 
   @action
   positionPopover() {
-    const { _popoverElement: popover, _triggerElement: trigger } = this;
-    const { placement } = this.args;
+    const { _popoverElement: popover, _referenceElement: reference } = this;
+    const { placement, options } = this.args;
 
     if (!popover) return;
-    if (!trigger) return;
+    if (!reference) return;
 
-    this._popper = createPopper(trigger, popover, {
-      placement: placement || 'bottom-end',
-      modifiers: [
-        {
-          name: 'offset',
-          options: {
-            offset: [0, 8],
-          },
-        },
-      ],
+    let opts: Partial<Options> = getOptions(placement);
+
+    if (options) {
+      if (typeof options === 'function') {
+        opts = options(reference, popover);
+      } else {
+        opts = options;
+      }
+    }
+
+    this._popper = createPopper(reference, popover, opts);
+
+    this.isShown = true;
+
+    registerDestructor(this, () => {
+      this._popper?.destroy();
+
+      if (isDestroying(this) || isDestroyed(this)) return;
+
+      this.isShown = false;
     });
-
-    registerDestructor(this, () => this._popper?.destroy());
   }
 }
 
@@ -88,3 +101,17 @@ setComponentTemplate(
   `,
   PopperJS
 );
+
+function getOptions(placement?: Options['placement']) {
+  return {
+    placement: placement || 'bottom-end',
+    modifiers: [
+      {
+        name: 'offset',
+        options: {
+          offset: [0, 8],
+        },
+      },
+    ],
+  };
+}

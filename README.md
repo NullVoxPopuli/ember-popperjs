@@ -4,6 +4,7 @@
 [![CI](https://github.com/NullVoxPopuli/ember-popperjs/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/NullVoxPopuli/ember-popperjs/actions/workflows/ci.yml)
 
 
+A single `<PopperJS>` component with easy to use API for creating popovers, tooltips, etc.
 
 ## Compatibility
 
@@ -23,17 +24,22 @@ ember install ember-popperjs
 Example building a `<Menu />` component
 ```hbs
 <PopperJS as |trigger popover|>
-  <button {{trigger}} class="button-classes">
+  <button {{trigger}} {{on "click" this.yourClickHandler}}>
     {{yield to="trigger"}}
   </button>
 
-  <div {{popover}} class="popover-classes">
-    This is a popover!
-    {{yield to="default"}}
-  </div>
+  {{#if this.yourVisibilityIndicator}}
+    <div {{popover}}>
+      This is a popover!
+      {{yield to="default"}}
+    </div>
+  {{/if}}
 </PopperJS>
 ```
-Not that neither Popper.JS nor this addon provide styles for making a popover.
+Things `<PopperJS>` does not do:
+ - provide styles for making a popover
+ - provide click handlers for showing and hiding the popover
+
 However, this addon pairs nicely with TailWind and [HeadlessUI](https://github.com/GavinJoyce/ember-headlessui)
 and a menu popover may look like: 
 
@@ -63,9 +69,21 @@ and a menu popover may look like:
   </PopperJS>
 </Menu>
 ```
+`<Menu>` provides the click handlers and visibilyt controls that make a
+popover behave as you would expect.
 
 ### API
 
+#### yield parameters
+
+```hbs
+<PopperJS as |trigger popover|>
+  ...
+</PopperJS>
+```
+
+- `trigger` - modifier - sets up the target element for the popover element to position itself to
+- `popover` - modifier - attaches to the elemnet that is the container of the popover content
 #### arguments
 
 ##### `@placement`
@@ -80,6 +98,18 @@ For example,
   ...
 </PopperJS>
 ```
+
+##### `@options`
+
+If the default options don't suit you, you may override them entirely.
+These options are not merged with any defaults, but allow straight pass-through, of the [Popper.js Options](https://popper.js.org/docs/v2/constructors/#options) object.
+
+Additionally, some options require references to the `reference` element as well as the `popover` element, so if you need that level of flexibility, `@options` may also be a function with the following signature:
+```ts
+(reference: HTMLElement, popover: HTMLElement) => Partial<Options>;
+```
+
+Note that if using `@options`, `@placement` will be ignored.
 
 ## Contributing
 

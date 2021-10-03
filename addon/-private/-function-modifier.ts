@@ -1,4 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { capabilities as modifierCapabilities, setModifierManager } from '@ember/modifier';
 
 type LazyTrackedArgs = {
@@ -61,7 +63,7 @@ class FunctionalModifierManager<Args extends LazyTrackedArgs> {
     }
   }
 
-  getDebugName(fn) {
+  getDebugName(fn: FunctionModifier<LazyTrackedArgs>) {
     return fn.name || '(anonymous function)';
   }
 }

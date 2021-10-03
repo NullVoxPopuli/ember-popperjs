@@ -1,7 +1,7 @@
 {
   "name": "ember-popperjs",
-  "version": "1.8.4",
-  "description": "Addon for enabling REPL and Playground creation with Ember/Glimmer",
+  "version": "0.0.0",
+  "description": "A single `<PopperJS>` component with easy to use API for creating popovers.",
   "keywords": [
     "ember-addon"
   ],
@@ -32,7 +32,7 @@
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "@popperjs/core": "^2.10.2",
-    "ember-auto-import": "2.1.0",
+    "ember-auto-import": "^2.2.0",
     "ember-cli-babel": "^7.26.6",
     "ember-cli-htmlbars": "^5.7.1",
     "ember-cli-typescript": "^4.2.1"
@@ -43,7 +43,7 @@
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.4.2",
     "@ember/test-waiters": "^3.0.0",
-    "@embroider/test-setup": "^0.44.2",
+    "@embroider/test-setup": "^0.45.0",
     "@nullvoxpopuli/eslint-configs": "^1.4.8",
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/git": "^10.0.0",
@@ -92,7 +92,7 @@
     "ember-try": "^1.4.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-decorator-position": "^2.2.29",
+    "eslint-plugin-decorator-position": "^4.0.1",
     "eslint-plugin-ember": "^10.5.5",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-node": "^11.1.0",
