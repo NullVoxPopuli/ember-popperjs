@@ -83,7 +83,7 @@ popover behave as you would expect.
 ```
 
 - `trigger` - modifier - sets up the target element for the popover element to position itself to
-- `popover` - modifier - attaches to the elemnet that is the container of the popover content
+- `popover` - modifier - attaches to the element that is the container of the popover content
 #### arguments
 
 ##### `@placement`
