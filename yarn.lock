@@ -966,9 +966,9 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@commitlint/cli@^13.1.0":
+"@commitlint/cli@^13.2.0":
   version "13.2.0"
-  resolved "https://registry.npmjs.org/@commitlint/cli/-/cli-13.2.0.tgz#9e85756b0d0ee06c34b5635d7ef42d7a6c72bd6f"
+  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-13.2.0.tgz#9e85756b0d0ee06c34b5635d7ef42d7a6c72bd6f"
   integrity sha512-RqG0cxxiwaL9OgQbA2ZEfZaVIRJmbtsZgnj5G07AjN7///s/40grSN4/kDl8YjUgvAZskPfJRoGGYNvHJ4zHWA==
   dependencies:
     "@commitlint/format" "^13.2.0"
@@ -981,9 +981,9 @@
     resolve-global "1.0.0"
     yargs "^17.0.0"
 
-"@commitlint/config-conventional@^13.1.0":
+"@commitlint/config-conventional@^13.2.0":
   version "13.2.0"
-  resolved "https://registry.npmjs.org/@commitlint/config-conventional/-/config-conventional-13.2.0.tgz#2ad24fecc56ae9619dbe0934b98a98b18ace0bec"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-13.2.0.tgz#2ad24fecc56ae9619dbe0934b98a98b18ace0bec"
   integrity sha512-7u7DdOiF+3qSdDlbQGfpvCH8DCQdLFvnI2+VucYmmV7E92iD6t9PBj+UjIoSQCaMAzYp27Vkall78AkcXBh6Xw==
   dependencies:
     conventional-changelog-conventionalcommits "^4.3.1"
@@ -2293,7 +2293,7 @@
   resolved "https://registry.npmjs.org/@types/uuid/-/uuid-8.3.1.tgz#1a32969cf8f0364b3d8c8af9cc3555b7805df14f"
   integrity sha512-Y2mHTRAbqfFkpjldbkHGY8JIzRN6XqYRliG8/24FcHm2D2PwW24fl5xMRTVGdrb7iMrwCaIEbLWerGIkXuFWVg==
 
-"@typescript-eslint/eslint-plugin@4.32.0", "@typescript-eslint/eslint-plugin@^4.31.2":
+"@typescript-eslint/eslint-plugin@4.32.0", "@typescript-eslint/eslint-plugin@^4.32.0":
   version "4.32.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.32.0.tgz#46d2370ae9311092f2a6f7246d28357daf2d4e89"
   integrity sha512-+OWTuWRSbWI1KDK8iEyG/6uK2rTm3kpS38wuVifGUTDB6kjEuNrzBI1MUtxnkneuWG/23QehABe2zHHrj+4yuA==
@@ -2319,7 +2319,7 @@
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
-"@typescript-eslint/parser@4.32.0", "@typescript-eslint/parser@^4.31.2":
+"@typescript-eslint/parser@4.32.0", "@typescript-eslint/parser@^4.32.0":
   version "4.32.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-4.32.0.tgz#751ecca0e2fecd3d44484a9b3049ffc1871616e5"
   integrity sha512-lhtYqQ2iEPV5JqV7K+uOVlPePjClj4dOw7K4/Z1F2yvjIUvyr13yJnDzkK6uon4BjHYuHy3EG0c2Z9jEhFk56w==
@@ -6052,9 +6052,9 @@ ember-source@3.28.1:
     semver "^7.3.4"
     silent-error "^1.1.1"
 
-ember-template-lint@^3.7.0:
+ember-template-lint@^3.8.0:
   version "3.8.0"
-  resolved "https://registry.npmjs.org/ember-template-lint/-/ember-template-lint-3.8.0.tgz#e1faf7ef013ef2b8772c11e442dbb63e3fa92b07"
+  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-3.8.0.tgz#e1faf7ef013ef2b8772c11e442dbb63e3fa92b07"
   integrity sha512-saaJz6ZK/B4jz1pdfJlkRimnwtOKfDZRhw3eAcO5P6OD/pV5ZKMRniy1AyX7E2jymkGc6pbs8dUrhF08Usivrw==
   dependencies:
     "@ember-template-lint/todo-utils" "^10.0.0"
