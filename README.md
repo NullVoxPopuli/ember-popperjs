@@ -23,8 +23,8 @@ ember install ember-popperjs
 
 Example building a `<Menu />` component
 ```hbs
-<PopperJS as |trigger popover|>
-  <button {{trigger}} {{on "click" this.yourClickHandler}}>
+<PopperJS as |reference popover|>
+  <button {{reference}} {{on "click" this.yourClickHandler}}>
     {{yield to="trigger"}}
   </button>
 
@@ -45,9 +45,9 @@ and a menu popover may look like:
 
 ```hbs
 <Menu as |menu|>
-  <PopperJS as |trigger popover|>
+  <PopperJS as |reference popover|>
     <menu.Button
-      {{trigger}}
+      {{reference}}
       class="
         text-black
         relative rounded-sm border border-gray-900 bg-white px-2 py-1 -my-1 text-left
@@ -77,12 +77,12 @@ popover behave as you would expect.
 #### yield parameters
 
 ```hbs
-<PopperJS as |trigger popover|>
+<PopperJS as |reference popover|>
   ...
 </PopperJS>
 ```
 
-- `trigger` - modifier - sets up the target element for the popover element to position itself to
+- `reference` - modifier - sets up the target element for the popover element to position itself to
 - `popover` - modifier - attaches to the element that is the container of the popover content
 #### arguments
 
@@ -94,7 +94,7 @@ The default placement is `"bottom-end"`, but any placement described by the
 For example,
 
 ```hbs
-<PopperJS @placement="top" as |trigger popover|>
+<PopperJS @placement="top" as |reference popover|>
   ...
 </PopperJS>
 ```
