@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/NullVoxPopuli/ember-popperjs/compare/v1.0.2...v1.0.3) (2021-10-11)
+
+
+### Bug Fixes
+
+* **readme:** update examples to use better name ([f589aa1](https://github.com/NullVoxPopuli/ember-popperjs/commit/f589aa1115a17603d98fda07d11cfc72b9c332f4))
+
 ## [1.0.2](https://github.com/NullVoxPopuli/ember-popperjs/compare/v1.0.1...v1.0.2) (2021-10-11)
 
 
