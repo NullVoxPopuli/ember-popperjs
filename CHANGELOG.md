@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/NullVoxPopuli/ember-popperjs/compare/v1.0.3...v1.0.4) (2021-10-19)
+
+
+### Bug Fixes
+
+* **deps:** update cli dependencies ([8602bb6](https://github.com/NullVoxPopuli/ember-popperjs/commit/8602bb63bfdf9406a24a5d5d7178a8234504350b))
+
 ## [1.0.3](https://github.com/NullVoxPopuli/ember-popperjs/compare/v1.0.2...v1.0.3) (2021-10-11)
 
 
