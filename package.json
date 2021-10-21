@@ -1,6 +1,6 @@
 {
   "name": "ember-popperjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A single `<PopperJS>` component with easy to use API for creating popovers.",
   "keywords": [
     "ember-addon"
