@@ -1,3 +1,17 @@
+# [2.0.0](https://github.com/NullVoxPopuli/ember-popperjs/compare/v1.0.5...v2.0.0) (2021-11-07)
+
+
+### chore
+
+* drop support for node 15 ([6e4b3af](https://github.com/NullVoxPopuli/ember-popperjs/commit/6e4b3afc779c9457d4969fb193c020015fa76c6c))
+
+
+### BREAKING CHANGES
+
+* node 15 is not supported.
+
+Node 14 and 16 are though.
+
 ## [1.0.5](https://github.com/NullVoxPopuli/ember-popperjs/compare/v1.0.4...v1.0.5) (2021-10-21)
 
 
