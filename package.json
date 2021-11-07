@@ -127,7 +127,7 @@
     "yarn": "1.22.17"
   },
   "engines": {
-    "node": ">= v14.18.1"
+    "node": "^ v14.0.0 || >= 16.0.0"
   },
   "ember": {
     "edition": "octane"
