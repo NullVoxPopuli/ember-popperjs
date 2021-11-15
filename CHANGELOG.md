@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/NullVoxPopuli/ember-popperjs/compare/v2.0.0...v2.0.1) (2021-11-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ember-auto-import to ^2.2.4 ([e22f939](https://github.com/NullVoxPopuli/ember-popperjs/commit/e22f939c6cbb2a5510e1f5a5b2880da6fec8f511))
+
 # [2.0.0](https://github.com/NullVoxPopuli/ember-popperjs/compare/v1.0.5...v2.0.0) (2021-11-07)
 
 
