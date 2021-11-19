@@ -69,7 +69,7 @@ and a menu popover may look like:
   </PopperJS>
 </Menu>
 ```
-`<Menu>` provides the click handlers and visibilyt controls that make a
+`<Menu>` provides the click handlers and visibility controls that make a
 popover behave as you would expect.
 
 ### API
