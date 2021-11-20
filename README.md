@@ -52,7 +52,7 @@ and a menu popover may look like:
         text-black
         relative rounded-sm border border-gray-900 bg-white px-2 py-1 -my-1 text-left
         transition ease-in-out duration-150 sm:text-sm
-        focus:ring-4 focus-visible:outline-none ring-ember-brand focus:outline-none
+        focus:ring-4 focus-visible:outline-none focus:outline-none
       "
       ...attributes
     >
