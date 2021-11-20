@@ -40,7 +40,7 @@ Things `<PopperJS>` does not do:
  - provide styles for making a popover
  - provide click handlers for showing and hiding the popover
 
-However, this addon pairs nicely with TailWind and [HeadlessUI](https://github.com/GavinJoyce/ember-headlessui)
+However, this addon pairs nicely with [Tailwind CSS](https://tailwindcss.com/) and [HeadlessUI](https://github.com/GavinJoyce/ember-headlessui)
 and a menu popover may look like: 
 
 ```hbs
