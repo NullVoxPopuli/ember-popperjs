@@ -25,13 +25,17 @@ Example building a `<Menu />` component
 ```hbs
 <PopperJS as |reference popover|>
   <button {{reference}} {{on "click" this.yourClickHandler}}>
-    {{yield to="trigger"}}
+    Trigger button
   </button>
 
   {{#if this.yourVisibilityIndicator}}
     <div {{popover}}>
-      This is a popover!
-      {{yield to="default"}}
+      <button type="button">
+        Option 1
+      </button>
+      <button type="button">
+        Option 2
+      </button>
     </div>
   {{/if}}
 </PopperJS>
@@ -56,7 +60,7 @@ and a menu popover may look like:
       "
       ...attributes
     >
-      {{yield menu to="trigger"}}
+      Trigger button
     </menu.Button>
 
     <menu.Items
@@ -64,7 +68,16 @@ and a menu popover may look like:
       class="absolute top-2 z-20 grid mt-1 rounded-sm bg-white shadow-lg min-w-max"
       as |items|
     >
-      {{yield (component 'limber/menu/button' item=items.Item) to="options"}}
+      <items.Item as |item|>
+        <item.Element>
+          Option 1
+        </item.Element>
+      </items.Item>
+      <items.Item as |item|>
+        <item.Element>
+          Option 2
+        </item.Element>
+      </items.Item>
     </menu.Items>
   </PopperJS>
 </Menu>
