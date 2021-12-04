@@ -48,40 +48,66 @@ However, this addon pairs nicely with [Tailwind CSS](https://tailwindcss.com/) a
 and a menu popover may look like: 
 
 ```hbs
+{{!-- my-menu.hbs --}}
+
 <Menu as |menu|>
   <PopperJS as |reference popover|>
     <menu.Button
       {{reference}}
       class="
-        text-black
-        relative rounded-sm border border-gray-900 bg-white px-2 py-1 -my-1 text-left
-        transition ease-in-out duration-150 sm:text-sm
-        focus:ring-4 focus-visible:outline-none focus:outline-none
+        bg-blue-600 px-6 py-2.5 rounded shadow-md text-white
+        focus-visible:outline-none focus:outline-none focus:ring-4 hover:bg-blue-700 hover:shadow-lg
       "
       ...attributes
     >
-      Trigger button
+      {{yield menu to="trigger"}}
     </menu.Button>
 
     <menu.Items
       {{popover}}
-      class="absolute top-2 z-20 grid mt-1 rounded-sm bg-white shadow-lg min-w-max"
+      class="
+        bg-white border border-gray-200 flex flex-col rounded shadow-md
+      "
       as |items|
     >
-      <items.Item as |item|>
-        <item.Element>
-          Option 1
-        </item.Element>
-      </items.Item>
-      <items.Item as |item|>
-        <item.Element>
-          Option 2
-        </item.Element>
-      </items.Item>
+      {{yield (component 'my-menu/item' items=items) to="options"}}
     </menu.Items>
   </PopperJS>
 </Menu>
 ```
+
+Custom menu item for easier styling:
+
+```hbs
+{{!-- my-menu/item.hbs --}}
+
+<@items.Item as |item|>
+  <item.Element
+    class='flex justify-between w-full text-left px-4 py-2 text-sm leading-5
+      {{if item.isActive 'bg-indigo-500 text-white' 'text-gray-700'}}
+      {{if item.isDisabled 'cursor-not-allowed opacity-50'}}
+      '
+    ...attributes
+  >
+    {{yield}}
+  </item.Element>
+</@items.Item>
+```
+
+And finally usage:
+
+```hbs
+<MyMenu>
+  <:trigger>
+    My Menu
+  </:trigger>
+  <:options as |Item|>
+     <Item>Option 1</Item>
+     <Item>Option 2</Item>
+  </:options>
+</MyMenu>
+```
+
 `<Menu>` provides the click handlers and visibility controls that make a
 popover behave as you would expect.
 
