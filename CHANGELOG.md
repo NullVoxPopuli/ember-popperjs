@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/NullVoxPopuli/ember-popperjs/compare/v2.0.2...v2.0.3) (2021-12-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ember-cli-htmlbars to ^6.0.1 ([0f09048](https://github.com/NullVoxPopuli/ember-popperjs/commit/0f09048a6fd42c4a3e9f0e84aed2dfcca5b2372c))
+
 ## [2.0.2](https://github.com/NullVoxPopuli/ember-popperjs/compare/v2.0.1...v2.0.2) (2021-11-27)
 
 
