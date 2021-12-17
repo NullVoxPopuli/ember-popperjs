@@ -1,3 +1,10 @@
+## [2.0.5](https://github.com/NullVoxPopuli/ember-popperjs/compare/v2.0.4...v2.0.5) (2021-12-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ember-cli-babel to ^7.26.10 ([dfa0011](https://github.com/NullVoxPopuli/ember-popperjs/commit/dfa0011451b08cc3a240d30801a0745fc76c7df7))
+
 ## [2.0.4](https://github.com/NullVoxPopuli/ember-popperjs/compare/v2.0.3...v2.0.4) (2021-12-16)
 
 
