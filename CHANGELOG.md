@@ -1,3 +1,10 @@
+## [2.0.7](https://github.com/NullVoxPopuli/ember-popperjs/compare/v2.0.6...v2.0.7) (2022-01-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @popperjs/core to ^2.11.1 ([5a7d14f](https://github.com/NullVoxPopuli/ember-popperjs/commit/5a7d14f8844f19551039e1f03ebcfbf588a82aa4))
+
 ## [2.0.6](https://github.com/NullVoxPopuli/ember-popperjs/compare/v2.0.5...v2.0.6) (2021-12-22)
 
 
