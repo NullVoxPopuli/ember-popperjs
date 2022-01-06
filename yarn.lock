@@ -1357,6 +1357,16 @@
     ember-cli-version-checker "^5.1.2"
     semver "^7.3.5"
 
+"@ember/test-waiters@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@ember/test-waiters/-/test-waiters-3.0.1.tgz#c3416dd6dcb0e3c0434e815e1de144d848ad74b1"
+  integrity sha512-LqV55mMiSuhAAWfbJdJf0bxHc22A/CiG8TKyZwpcSv4A1GJIpdlTvqHCrlcdV6T30+L0/uyj14upC3ayWmV0CQ==
+  dependencies:
+    calculate-cache-key-for-tree "^2.0.0"
+    ember-cli-babel "^7.26.6"
+    ember-cli-version-checker "^5.1.2"
+    semver "^7.3.5"
+
 "@embroider/core@0.33.0", "@embroider/core@^0.33.0":
   version "0.33.0"
   resolved "https://registry.yarnpkg.com/@embroider/core/-/core-0.33.0.tgz#0fb1752d6e34ea45368e65c42e13220a57ffae76"
