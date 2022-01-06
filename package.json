@@ -42,7 +42,7 @@
     "@commitlint/config-conventional": "^13.2.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
-    "@ember/test-waiters": "^3.0.0",
+    "@ember/test-waiters": "^3.0.1",
     "@embroider/test-setup": "^0.49.0",
     "@nullvoxpopuli/eslint-configs": "^2.1.16",
     "@semantic-release/changelog": "^6.0.1",
