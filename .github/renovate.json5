@@ -85,9 +85,20 @@
       ]
     },
     {
+      // changing engines forces other people to need to upgrade their minimum node
+      // therefor engine changes are breaking changes
+      "depTypeList": ["engines"],
+      "enabled": false
+    },
+    {
       // changing peerDependencies *at all* is a breaking change
       "matchDepTypes": ["peerDependencies"],
       "enabled": false
+    },
+    {
+      // keep ranges conservatively wide
+      "matchDepTypes": ["dependencies"],
+      "rangeStrategy": "update-lockfile"
     }
   ]
 }
