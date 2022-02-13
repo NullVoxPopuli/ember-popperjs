@@ -11,6 +11,7 @@
     "CHANGELOG.md",
     "README.md"
   ],
+  "types": "dist",
   "exports": {
     ".": "./dist/index.js",
     "./*": "./dist/*"
