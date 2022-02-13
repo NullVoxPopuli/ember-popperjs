@@ -11,6 +11,10 @@
     "CHANGELOG.md",
     "README.md"
   ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*"
+  },
   "scripts": {
     "start": "concurrently 'npm:watch:*'",
     "build": "concurrently 'npm:build:*'",
