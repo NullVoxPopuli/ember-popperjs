@@ -80,6 +80,9 @@
       "./components/popper-j-s.js": "./dist/_app_/components/popper-j-s.js"
     }
   },
+  "engines": {
+    "node": "14.* || >= 16"
+  },
   "volta": {
     "extends": "../package.json"
   }
