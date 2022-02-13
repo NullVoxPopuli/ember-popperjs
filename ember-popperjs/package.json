@@ -36,6 +36,7 @@
   "peerDependencies": {
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
+    "@ember/component": ">= 3.25.0",
     "ember-source": ">= 3.25.0"
   },
   "devDependencies": {

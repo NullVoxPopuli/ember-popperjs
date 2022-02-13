@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      - run: yarn install
+      - run: yarn install --frozen-lockfile
 
       - name: Test with ${{ matrix.node }}
         run: node_modules/.bin/ember test
@@ -61,7 +61,8 @@ jobs:
       - run: yarn install --no-lockfile
 
       - name: Test with Node ${{ matrix.node }}
-        run: npm exec ember test
+        run: node_modules/.bin/ember test
+        working-directory: ${{ env.TEST_DIR }}
 
   try-scenarios:
     if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
@@ -93,9 +94,7 @@ jobs:
         run: |
           cd ${{ env.LIBRARY_DIR }}
           yarn build
-          yarn link
           cd ../${{ env.TEST_DIR }}
-          yarn link ember-statechart-component
           yarn ember try:one ${{ matrix.ember-try-scenario }} --skip-cleanup
   publish:
     name: Release
