@@ -35,8 +35,7 @@
     "@popperjs/core": "^2.11.1"
   },
   "peerDependencies": {
-    "@glimmer/component": "^1.0.4",
-    "@glimmer/tracking": "^1.0.4"
+    "ember-source": ">= 3.25.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.2",
