@@ -17,15 +17,11 @@ interface Signature {
   Args: {
     placement?: Popper.Placement;
     options?: Options | ((reference: HTMLElement, popover: HTMLElement) => Options);
-  },
+  };
   Blocks: {
-    default: [
-      PopperJS['trigger'],
-      PopperJS['popover'],
-    ],
-  },
-};
-
+    default: [PopperJS['trigger'], PopperJS['popover']];
+  };
+}
 
 /**
  * This component does not use a long-lived instance of popper as most examples
@@ -49,29 +45,35 @@ export class PopperJS extends Component<Signature> {
   // This is yielded out, but it's not public API
   @tracked isShown = false;
 
-  trigger = modifier((element: HTMLElement) => {
-    this._referenceElement = element;
+  trigger = modifier(
+    (element: HTMLElement) => {
+      this._referenceElement = element;
 
-    if (this._popoverElement) this.positionPopover();
+      if (this._popoverElement) this.positionPopover();
 
-    return () => {
-      this._referenceElement = undefined;
-      this._popper?.destroy();
-      this.isShown = false;
-    };
-  }, { eager: false });
+      return () => {
+        this._referenceElement = undefined;
+        this._popper?.destroy();
+        this.isShown = false;
+      };
+    },
+    { eager: false }
+  );
 
-  popover = modifier((element: HTMLElement) => {
-    this._popoverElement = element;
+  popover = modifier(
+    (element: HTMLElement) => {
+      this._popoverElement = element;
 
-    if (this._referenceElement) this.positionPopover();
+      if (this._referenceElement) this.positionPopover();
 
-    return () => {
-      this._popoverElement = undefined;
-      this._popper?.destroy();
-      this.isShown = false;
-    };
-  }, { eager: false });
+      return () => {
+        this._popoverElement = undefined;
+        this._popper?.destroy();
+        this.isShown = false;
+      };
+    },
+    { eager: false }
+  );
 
   @action
   positionPopover() {
