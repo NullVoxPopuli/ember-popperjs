@@ -8,8 +8,7 @@ import { action } from '@ember/object';
 import { hbs } from 'ember-cli-htmlbars';
 
 import { createPopper } from '@popperjs/core';
-
-import { modifier } from './-function-modifier';
+import { modifier } from 'ember-modifier';
 
 import type { Options } from '@popperjs/core';
 import type Popper from '@popperjs/core';
