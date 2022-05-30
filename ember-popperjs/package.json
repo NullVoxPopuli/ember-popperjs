@@ -5,6 +5,12 @@
   "repository": "https://github.com/NullVoxPopuli/ember-popperjs",
   "license": "MIT",
   "author": "NullVoxPopuli",
+  "keywords": [
+    "ember-addon",
+    "popperjs",
+    "emberjs",
+    "modifiers"
+  ],
   "files": [
     "dist",
     "addon-main.cjs",
