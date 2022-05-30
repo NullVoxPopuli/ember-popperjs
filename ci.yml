@@ -4,13 +4,13 @@ template: "v2-addon"
 # ---------------------
 
 addon: './ember-popperjs'
-testApp: './testing/ember-app'
+testApp: './testing/test-app'
 
 lint:
   commits: true
   eslint:
     - "./ember-popperjs"
-    - "./testing/ember-app"
+    - "./testing/test-app"
 
 build:
   run: 'pnpm run build:js'
