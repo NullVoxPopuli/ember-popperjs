@@ -10,12 +10,11 @@ import { hbs } from 'ember-cli-htmlbars';
 import { createPopper } from '@popperjs/core';
 import { modifier } from 'ember-modifier';
 
-import type { Options } from '@popperjs/core';
-import type Popper from '@popperjs/core';
+import type { Options, Placement } from '@popperjs/core';
 
 interface Signature {
   Args: {
-    placement?: Popper.Placement;
+    placement?: Placement;
     options?: Options | ((reference: HTMLElement, popover: HTMLElement) => Options);
   };
   Blocks: {
@@ -40,7 +39,7 @@ interface Signature {
 export class PopperJS extends Component<Signature> {
   declare _referenceElement?: HTMLElement;
   declare _popoverElement?: HTMLElement;
-  declare _popper?: Popper.Instance;
+  declare _popper?: ReturnType<typeof createPopper>;
 
   // This is yielded out, but it's not public API
   @tracked isShown = false;
