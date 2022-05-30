@@ -1,0 +1,16 @@
+{
+  "name": "build-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "pnpm assert-folder-contents"
+  },
+  "devDependencies": {
+    "assert-folder-contents": "^1.0.0"
+  },
+  "packageManager": "pnpm@7.1.2",
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
