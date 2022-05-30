@@ -100,15 +100,15 @@ importers:
       '@types/ember': ^4.0.0
       '@types/ember__application': ^4.0.0
       '@types/ember__array': ^4.0.1
-      '@types/ember__component': ^4.0.4
+      '@types/ember__component': ^4.0.8
       '@types/ember__controller': ^4.0.0
-      '@types/ember__debug': ^4.0.0
+      '@types/ember__debug': ^4.0.1
       '@types/ember__engine': ^4.0.0
       '@types/ember__error': ^4.0.0
-      '@types/ember__object': ^4.0.0
+      '@types/ember__object': ^4.0.2
       '@types/ember__polyfills': ^4.0.0
-      '@types/ember__routing': ^4.0.3
-      '@types/ember__runloop': ^4.0.0
+      '@types/ember__routing': ^4.0.7
+      '@types/ember__runloop': ^4.0.1
       '@types/ember__service': ^4.0.0
       '@types/ember__string': ^3.0.9
       '@types/ember__template': ^4.0.0
@@ -134,7 +134,7 @@ importers:
       ember-cli-dependency-checker: ^3.2.0
       ember-cli-htmlbars: ^6.0.1
       ember-cli-inject-live-reload: ^2.1.0
-      ember-cli-typescript: ^5.0.0
+      ember-cli-typescript: ^5.1.0
       ember-export-application-global: ^2.0.1
       ember-load-initializers: ^2.1.2
       ember-modifier: ^3.2.7
@@ -154,7 +154,7 @@ importers:
       prettier: ^2.5.1
       qunit: ^2.17.2
       qunit-dom: ^2.0.0
-      typescript: ^4.5.5
+      typescript: ^4.7.2
       webpack: ^5.72.1
     dependencies:
       ember-modifier: 3.2.7_@babel+core@7.18.2
