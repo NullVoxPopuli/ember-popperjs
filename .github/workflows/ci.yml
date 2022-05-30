@@ -14,13 +14,13 @@ env:
   #      Consider using a YAML builder like in:
   #        https://github.com/NullVoxPopuli/ember-resources/blob/main/build/github-workflows/workflows/ci.yaml
   #        for more ergonomics in defining the Workflow
-  dist: ember-aria-utilities/dist
-  addonLocation: ./ember-aria-utilities
+  dist: ember-popperjs/dist
+  addonLocation: ./ember-popperjs
 
   testAppName: test-app
   testAppLocation: ./testing/test-app
 
-# Everything below here can be copied between repos, provided the above env is swapped out
+  # Everything below here can be copied between repos, provided the above env is swapped out
 
 jobs:
   install_dependencies:
@@ -52,7 +52,7 @@ jobs:
       fail-fast: true
       matrix:
         path:
-          - ./ember-aria-utilities
+          - ./ember-popperjs
           - ./testing/test-app
     steps:
       - uses: actions/checkout@v3
