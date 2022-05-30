@@ -5,8 +5,12 @@ setup:
   cwd: "../../ember-popperjs"
 
 expect: |
+  _app_/components/popper-j-s.js
   index.js
   index.js.map
   index.d.ts
-  index.d.ts.map
+  components/popper-j-s.js
+  components/popper-j-s.js.map
+  components/popper-j-s.d.ts
+  components/popper-j-s.d.ts.map
 

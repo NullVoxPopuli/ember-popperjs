@@ -13,12 +13,19 @@ import { modifier } from 'ember-modifier';
 import type { Options } from '@popperjs/core';
 import type Popper from '@popperjs/core';
 
-interface Args {
-  placement?: Popper.Placement;
-  options?: Options | ((reference: HTMLElement, popover: HTMLElement) => Options);
-}
+interface Signature {
+  Args: {
+    placement?: Popper.Placement;
+    options?: Options | ((reference: HTMLElement, popover: HTMLElement) => Options);
+  },
+  Blocks: {
+    default: [
+      PopperJS['trigger'],
+      PopperJS['popover'],
+    ],
+  },
+};
 
-export default PopperJS;
 
 /**
  * This component does not use a long-lived instance of popper as most examples
@@ -34,7 +41,7 @@ export default PopperJS;
  * avoid all this destruction and re-creating.
  *
  */
-export class PopperJS extends Component<Args> {
+export class PopperJS extends Component<Signature> {
   declare _referenceElement?: HTMLElement;
   declare _popoverElement?: HTMLElement;
   declare _popper?: Popper.Instance;
@@ -52,7 +59,7 @@ export class PopperJS extends Component<Args> {
       this._popper?.destroy();
       this.isShown = false;
     };
-  });
+  }, { eager: false });
 
   popover = modifier((element: HTMLElement) => {
     this._popoverElement = element;
@@ -64,7 +71,7 @@ export class PopperJS extends Component<Args> {
       this._popper?.destroy();
       this.isShown = false;
     };
-  });
+  }, { eager: false });
 
   @action
   positionPopover() {
@@ -104,6 +111,8 @@ setComponentTemplate(
   `,
   PopperJS
 );
+
+export default PopperJS;
 
 function getOptions(placement?: Options['placement']) {
   return {
