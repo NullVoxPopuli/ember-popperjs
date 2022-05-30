@@ -1,6 +1,6 @@
 {
   "name": "ember-popperjs",
-  "version": "2.0.9",
+  "version": "3.0.0",
   "description": "A single `<PopperJS>` component with easy to use API for creating popovers.",
   "repository": "https://github.com/NullVoxPopuli/ember-popperjs",
   "license": "MIT",
