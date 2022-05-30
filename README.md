@@ -19,6 +19,18 @@ A single `<PopperJS>` component with easy to use API for creating popovers, tool
 ember install ember-popperjs
 ```
 
+## Glint Setup
+
+_This is only needed when using "loose ember"._
+If you're using strict-mode templates, you can skip this.
+
+in some TS file, import
+```ts
+import 'ember-popperjs/glint';
+```
+
+This merges with the loose ember template registry.
+
 ## Usage
 
 Example building a `<Menu />` component
@@ -41,7 +53,7 @@ Things `<PopperJS>` does not do:
  - provide click handlers for showing and hiding the popover
 
 However, this addon pairs nicely with [Tailwind CSS](https://tailwindcss.com/) and [HeadlessUI](https://github.com/GavinJoyce/ember-headlessui)
-and a menu popover may look like: 
+and a menu popover may look like:
 
 ```hbs
 <Menu as |menu|>

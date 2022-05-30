@@ -4,7 +4,9 @@
   "license": "MIT",
   "author": "NullVoxPopuli",
   "scripts": {
-    "build": "pnpm run --filter ember-popperjs build"
+    "build": "pnpm run --filter ember-popperjs build",
+    "lint:js": "pnpm run --filter \"*\" lint:js",
+    "types": "pnpm exec --filter \"*\" exec tsc --build"
   },
   "volta": {
     "node": "16.13.2"

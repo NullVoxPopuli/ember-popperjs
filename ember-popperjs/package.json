@@ -13,6 +13,7 @@
   ],
   "files": [
     "dist",
+    "glint.d.ts",
     "addon-main.cjs"
   ],
   "exports": {
@@ -23,6 +24,9 @@
     ">=4.0.0": {
       "*": [
         "dist/*"
+      ],
+      "glint": [
+        "glint.d.ts"
       ]
     }
   },
@@ -44,8 +48,14 @@
     "@popperjs/core": "^2.11.1"
   },
   "peerDependencies": {
+    "@glint/environment-ember-loose": "^0.8.2",
     "ember-modifier": ">= 3.2.7",
     "ember-source": ">= 3.25.0"
+  },
+  "peerDependenciesMeta": {
+    "@glint/environment-ember-loose": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
