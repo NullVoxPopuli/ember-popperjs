@@ -18,7 +18,17 @@ interface Signature {
     options?: Options | ((reference: HTMLElement, popover: HTMLElement) => Options);
   };
   Blocks: {
-    default: [PopperJS['trigger'], PopperJS['popover']];
+    default: [
+      PopperJS['trigger'],
+      /**
+        * Modifier to attach to the element that should be positioned
+        */
+      PopperJS['popover'],
+      /**
+       * @private / for testing purposes only
+       */
+      boolean
+    ];
   };
 }
 
