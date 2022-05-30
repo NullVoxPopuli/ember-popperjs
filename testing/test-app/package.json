@@ -26,14 +26,16 @@
     "ember-popperjs": "*"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
     "@embroider/compat": "^1.2.0",
     "@embroider/core": "^1.2.0",
     "@embroider/test-setup": "^1.2.0",
     "@embroider/webpack": "^1.2.0",
-    "@glimmer/component": "^1.0.4",
-    "@glimmer/tracking": "^1.0.4",
+    "@glimmer/component": "^1.1.2",
+    "@glimmer/tracking": "^1.1.2",
+    "@types/ember": "^4.0.0",
     "@types/ember-data": "^4.0.0",
     "@types/ember-data__adapter": "^4.0.0",
     "@types/ember-data__model": "^4.0.0",

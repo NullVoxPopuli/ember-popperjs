@@ -7,7 +7,9 @@
   ],
   "automerge": true,
   "masterIssue": true,
-  "rangeStrategy": "bump",
+  // bump for apps
+  // update-lockfile for addons/libraries
+  "rangeStrategy": "update-lockfile",
   // From the docs:
   // https://docs.renovatebot.com/configuration-options/#packagerules
   // Important to know: Renovate will evaluate all packageRules and not stop once it gets a first match.
@@ -24,7 +26,13 @@
     {
       "groupName": "Type Definitions",
       "packagePatterns": ["^@types\/*"],
-      "schedule": ["after 9pm on sunday"],
+      "schedule": ["after 9pm on sunday"]
+    },
+    // This library needs to be bumped, because otherwise we would not
+    // receive blueprint updates whenever a release occurs
+    {
+      "packageNames": ["ember-addon-automated-ci"],
+      "rangeStrategy": "bump"
     },
     {
       "groupName": "Lint Dependencies",
@@ -85,10 +93,20 @@
       ]
     },
     {
-      // changing engines forces other people to need to upgrade their minimum node
-      // therefor engine changes are breaking changes
-      "depTypeList": ["engines"],
-      "enabled": false
+      // We will handle this ourselves
+      "groupName": "Automated Release Dependencies",
+      "enabled": false,
+      "packagePatterns": [
+        "@semantic-release*",
+        "semantic-release*"
+      ]
+    },
+    {
+      // Max Semver compatibility
+      "packagePatterns": [
+        "@ember/test-waiters"
+      ],
+      "rangeStrategy": "widen"
     },
     {
       // changing peerDependencies *at all* is a breaking change
@@ -96,9 +114,16 @@
       "enabled": false
     },
     {
-      // keep ranges conservatively wide
+      // ensure maximum compatibility, when possible
+      "matchPaths": ["ember-aria-utilities/package.json"],
       "matchDepTypes": ["dependencies"],
-      "rangeStrategy": "update-lockfile"
+      "enabled": false
+    },
+    {
+      // changing engines forces other people to need to upgrade their minimum node
+      // therefor engine changes are breaking changes
+      "depTypeList": ["engines"],
+      "enabled": false
     }
   ]
 }

@@ -1,9 +1,5 @@
 {
   "private": true,
-  "workspaces": [
-    "ember-popperjs",
-    "test-app"
-  ],
   "repository": "https://github.com/NullVoxPopuli/ember-popperjs",
   "license": "MIT",
   "author": "NullVoxPopuli",
@@ -11,17 +7,19 @@
     "build": "yarn workspace ember-popperjs build",
     "prepare": "yarn build"
   },
-  "resolutions": {
-    "@embroider/compat": "^1.2.0",
-    "@embroider/core": "^1.2.0",
-    "@embroider/test-setup": "^1.2.0",
-    "@embroider/webpack": "^1.2.0"
-  },
   "volta": {
     "node": "16.13.2",
     "yarn": "1.22.17"
   },
-  "engines": {
-    "node": "^ v14.0.0 || >= 16.0.0"
+  "packageManager": "pnpm@7.1.2",
+  "pnpm": {
+    "overrides": {
+      "@types/eslint": "7.29.0",
+      "mustache": "^4.2.0"
+    },
+    "overrides-notes": {
+      "@types/eslint": "webpack brings in @types/eslint@8, which breaks our type checking",
+      "mustache": "ember-cli -> testem -> consolidate -> mustache is ancient"
+    }
   }
 }

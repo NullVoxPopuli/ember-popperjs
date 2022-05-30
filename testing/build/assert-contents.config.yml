@@ -1,0 +1,12 @@
+target: "../../ember-popperjs/dist"
+
+setup:
+  run: "pnpm run build:js"
+  cwd: "../../ember-popperjs"
+
+expect: |
+  index.js
+  index.js.map
+  index.d.ts
+  index.d.ts.map
+

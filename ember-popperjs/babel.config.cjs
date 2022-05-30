@@ -28,6 +28,7 @@ module.exports = {
         loose: true,
       },
     ],
+    // eslint-disable-next-line node/no-missing-require
     resolve('@embroider/addon-dev/template-colocation-plugin'),
   ],
 };
