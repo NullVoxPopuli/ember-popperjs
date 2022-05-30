@@ -2941,10 +2941,10 @@
     "@types/ember__array" "*"
     "@types/ember__object" "*"
 
-"@types/ember__array@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@types/ember__array/-/ember__array-4.0.0.tgz#68cc7d5d2f219314187a9a068eda990787134bd4"
-  integrity sha512-C3kFMgUI/rTEIemVWc5oanjek7oLLWCQscBtkEcC7dQVr3GstXxBYHYjmAscI2vqLgjGmdibk7SYbfrde5qHjg==
+"@types/ember__array@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@types/ember__array/-/ember__array-4.0.1.tgz#b62126ed080b29351a5633bd28e595a5cfee27ce"
+  integrity sha512-fwrYcYmFbsEnu77Xn9z3WSAp6tqpwn8Wksx8RzGg5pib6VmFD/dkT5jefwoKtlcImsxUNEoP1VgWKrdrpGaQcg==
   dependencies:
     "@types/ember" "*"
     "@types/ember__array" "*"
@@ -2959,15 +2959,14 @@
     "@types/ember__object" "*"
     "@types/jquery" "*"
 
-"@types/ember__component@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@types/ember__component/-/ember__component-4.0.0.tgz#c549ca7c666276946bccb0d9659e41c91219b0b9"
-  integrity sha512-0T/qaKqC2XiKoui8Fmg6pKkrNU98kdlCH8/Z0duUoneJAfbXoV02L0bXKqJgnB8Ve8qgs1CXvSVPX9msDR3nLg==
+"@types/ember__component@^4.0.8":
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/@types/ember__component/-/ember__component-4.0.8.tgz#09a5f954f734fcbe6c988a173f4de4fa09084470"
+  integrity sha512-YVGn/kpWtpZAu6I2XtS9fsZV+78/sON5NyKzK5EOUyMiCwwpbUr5XL8dTSdkHehYrsfzJikcYvqpmwbNZSJxGQ==
   dependencies:
     "@types/ember" "*"
     "@types/ember__component" "*"
     "@types/ember__object" "*"
-    "@types/jquery" "*"
 
 "@types/ember__controller@*":
   version "3.16.6"
@@ -2992,10 +2991,10 @@
     "@types/ember__engine" "*"
     "@types/ember__object" "*"
 
-"@types/ember__debug@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@types/ember__debug/-/ember__debug-4.0.0.tgz#02d3d710988988e5cff094ddcd45e5364727b161"
-  integrity sha512-yY+U7veF8jYFJdm+IU+7Y/DoxVsyV/73UvFUdR0jCasMVL9vuGkVx0rXlqe6XAM2cWI1LwV7zKQzgqDC8kQD2g==
+"@types/ember__debug@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@types/ember__debug/-/ember__debug-4.0.1.tgz#1e4a8a1045484295dddc7bd4356d0b3014b0d509"
+  integrity sha512-qrKk6Ujh6oev7TSB0eB7AEmQWKCt5t84k/K3hDvJXUiLU3YueN0kyt7aPoIAkVjC111A9FqDugl9n60+N5yeEw==
   dependencies:
     "@types/ember-resolver" "*"
     "@types/ember__debug" "*"
@@ -3041,10 +3040,10 @@
     "@types/ember__object" "*"
     "@types/rsvp" "*"
 
-"@types/ember__object@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@types/ember__object/-/ember__object-4.0.0.tgz#18ffa0747ebaceed8ea3dbc9793dd033dc47adf2"
-  integrity sha512-mOd53VoaHTKZiRDnZlY1aouCb6P62OK2IrBLEY4pmnpmQPIFM8Q1COceMw8bh6Xjg8xOnhae5jsi3Ux2Ucnd2A==
+"@types/ember__object@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@types/ember__object/-/ember__object-4.0.2.tgz#070f1a36961f7df777e1fceed2551a648db0fd23"
+  integrity sha512-m3xjqjs7bGVT0+QXlgIoDMsp/oqePobnf4IiVoFdXLBpGCICiOAEi7HuUtCLi57WTvx0lYsS9hE1vgGyZn9qnw==
   dependencies:
     "@types/ember" "*"
     "@types/ember__object" "*"
@@ -3071,11 +3070,12 @@
     "@types/ember__routing" "*"
     "@types/ember__service" "*"
 
-"@types/ember__routing@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@types/ember__routing/-/ember__routing-4.0.2.tgz#5af1b2dd1a5491fdaccc908f8e69d39c11ed3536"
-  integrity sha512-ozZgAx6uRWasJmTeMYVT0/ckLmh4Yg3eSowJz78ipMTRjIkcp5wDcn/iQvPMZlAbDLAwQHE/9LOyI4JzVSSeTA==
+"@types/ember__routing@^4.0.7":
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/@types/ember__routing/-/ember__routing-4.0.7.tgz#16cc442fcee2dda06dc79bb3d7fd5002f154ad07"
+  integrity sha512-iWsk8C0WIqqK6dgK1UdJisyQLs6rVq/+A2f7fXjdLJHA+SAHK8aqfCHHFkTuiy4sXkM/PBINmP9qHpk4KrScbw==
   dependencies:
+    "@types/ember" "*"
     "@types/ember__controller" "*"
     "@types/ember__object" "*"
     "@types/ember__routing" "*"
@@ -3088,10 +3088,10 @@
   dependencies:
     "@types/ember__runloop" "*"
 
-"@types/ember__runloop@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@types/ember__runloop/-/ember__runloop-4.0.0.tgz#74079b2423240f7b6a7c8f0d6485455082e21d4b"
-  integrity sha512-2BArjaywglzZ0xN0GwHZpkKJQJmjXohiY8i+cHTWLv9U34uiPjGpbIm4v5ev8zSobOcA4wHY8svJ/b/MhCpf0g==
+"@types/ember__runloop@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@types/ember__runloop/-/ember__runloop-4.0.1.tgz#7f6e45af7dbf1158655ef3ad852852b0bf87065f"
+  integrity sha512-3HrsavVrdgxUkYptQUv/e9RwJG02cV9WbnJxKSvwl9ZYpeX4JbuDVucjTWk5BAvJUVtbiQLPGzLEHZ6daoCbbg==
   dependencies:
     "@types/ember" "*"
     "@types/ember__runloop" "*"
