@@ -16,8 +16,14 @@
     "addon-main.cjs"
   ],
   "exports": {
-    ".": "./dist/index.js",
-    "./*": "./dist/*"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "default": "./dist/*"
+    }
   },
   "typesVersions": {
     ">=4.0.0": {
@@ -44,6 +50,7 @@
     "@popperjs/core": "^2.11.1"
   },
   "peerDependencies": {
+    "@babel/runtime": ">= 7.18.0",
     "ember-modifier": ">= 3.2.7",
     "ember-source": ">= 3.25.0"
   },

@@ -3,6 +3,7 @@
 const { resolve } = require;
 
 module.exports = {
+  presets: [resolve('@babel/preset-typescript')],
   plugins: [
     [
       resolve('@babel/plugin-transform-typescript'),
@@ -18,14 +19,6 @@ module.exports = {
       {
         // The stage 1 implementation
         legacy: true,
-      },
-    ],
-    [
-      resolve('@babel/plugin-proposal-class-properties'),
-      {
-        // Only support browsers that also support class properties...
-        // If all addons do this, it greatly reduces shipped JS
-        loose: true,
       },
     ],
     // eslint-disable-next-line node/no-missing-require

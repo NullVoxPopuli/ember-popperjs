@@ -23,6 +23,7 @@
     "test:ember": "ember test"
   },
   "dependencies": {
+    "@babel/runtime": "^7.18.3",
     "ember-modifier": "^3.2.7",
     "ember-popperjs": "*"
   },
