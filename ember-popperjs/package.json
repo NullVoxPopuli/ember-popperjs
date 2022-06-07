@@ -54,6 +54,7 @@
     "@babel/plugin-syntax-decorators": "^7.17.12",
     "@babel/plugin-transform-typescript": "^7.18.4",
     "@babel/preset-typescript": "^7.17.12",
+    "@babel/runtime": "^7.18.3",
     "@embroider/addon-dev": "^1.7.1",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
