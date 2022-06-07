@@ -89,6 +89,7 @@ importers:
   testing/test-app:
     specifiers:
       '@babel/core': ^7.0.0
+      '@babel/runtime': ^7.18.3
       '@ember/optional-features': ^2.0.0
       '@ember/test-helpers': ^2.6.0
       '@embroider/compat': ^1.2.0
@@ -158,6 +159,7 @@ importers:
       typescript: ^4.7.2
       webpack: ^5.72.1
     dependencies:
+      '@babel/runtime': 7.18.3
       ember-modifier: 3.2.7_@babel+core@7.18.2
       ember-popperjs: link:../../ember-popperjs
     devDependencies:
@@ -797,7 +799,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.18.2
+      '@babel/core': 7.18.2_supports-color@8.1.1
       '@babel/helper-plugin-utils': 7.17.12
       '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3_@babel+core@7.18.2
 
@@ -840,7 +842,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.18.2
+      '@babel/core': 7.18.2_supports-color@8.1.1
       '@babel/helper-plugin-utils': 7.17.12
       '@babel/helper-skip-transparent-expression-wrappers': 7.16.0
       '@babel/plugin-syntax-optional-chaining': 7.8.3_@babel+core@7.18.2
@@ -989,7 +991,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.18.2
+      '@babel/core': 7.18.2_supports-color@8.1.1
       '@babel/helper-plugin-utils': 7.17.12
 
   /@babel/plugin-syntax-numeric-separator/7.10.4_@babel+core@7.18.2:
@@ -1021,7 +1023,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.18.2
+      '@babel/core': 7.18.2_supports-color@8.1.1
       '@babel/helper-plugin-utils': 7.17.12
 
   /@babel/plugin-syntax-private-property-in-object/7.14.5_@babel+core@7.18.2:
