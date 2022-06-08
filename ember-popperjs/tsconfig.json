@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    // Allows the test app's type checker to
+    // properly re-build when the addon re-builds
+    "composite": true,
+
     // Path resolution
     "baseUrl": "./src",
     "moduleResolution": "node",
