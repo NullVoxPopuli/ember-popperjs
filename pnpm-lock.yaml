@@ -25,6 +25,7 @@ importers:
       '@popperjs/core': ^2.11.1
       '@semantic-release/changelog': ^6.0.1
       '@semantic-release/git': ^10.0.1
+      '@types/ember__application': ^4.0.0
       '@types/ember__component': ^4.0.4
       '@types/ember__destroyable': ^4.0.0
       '@types/ember__object': ^4.0.0
@@ -42,8 +43,8 @@ importers:
       eslint-plugin-prettier: ^4.0.0
       eslint-plugin-simple-import-sort: ^7.0.0
       prettier: ^2.0.0
-      rollup: ^2.75.3
-      rollup-plugin-ts: ^2.0.7
+      rollup: ^2.75.4
+      rollup-plugin-ts: ^3.0.0
       semantic-release: ^19.0.2
       tslib: ^2.4.0
       typescript: ^4.5.5
@@ -57,12 +58,13 @@ importers:
       '@babel/plugin-syntax-decorators': 7.17.12_@babel+core@7.18.2
       '@babel/plugin-transform-typescript': 7.18.4_@babel+core@7.18.2
       '@babel/preset-typescript': 7.17.12_@babel+core@7.18.2
-      '@embroider/addon-dev': 1.7.1_rollup@2.75.3
+      '@embroider/addon-dev': 1.7.1_rollup@2.75.4
       '@glimmer/component': 1.1.2_@babel+core@7.18.2
       '@glimmer/tracking': 1.1.2
       '@nullvoxpopuli/eslint-configs': 2.2.20_typescript@4.7.2
       '@semantic-release/changelog': 6.0.1_semantic-release@19.0.2
       '@semantic-release/git': 10.0.1_semantic-release@19.0.2
+      '@types/ember__application': 4.0.0
       '@types/ember__component': 4.0.8
       '@types/ember__destroyable': 4.0.0
       '@types/ember__object': 4.0.2
@@ -80,8 +82,8 @@ importers:
       eslint-plugin-prettier: 4.0.0_evcial7aw3q6fcauxv2c7fxuoe
       eslint-plugin-simple-import-sort: 7.0.0_eslint@7.32.0
       prettier: 2.6.2
-      rollup: 2.75.3
-      rollup-plugin-ts: 2.0.7_cyw4ulz4v6uakmaqjg253tfjem
+      rollup: 2.75.4
+      rollup-plugin-ts: 3.0.0_wrtyuusmf4ab33rxpvzwudiive
       semantic-release: 19.0.2
       tslib: 2.4.0
       typescript: 4.7.2
@@ -89,6 +91,7 @@ importers:
   testing/test-app:
     specifiers:
       '@babel/core': ^7.0.0
+      '@babel/runtime': ^7.18.3
       '@ember/optional-features': ^2.0.0
       '@ember/test-helpers': ^2.6.0
       '@embroider/compat': ^1.2.0
@@ -158,6 +161,7 @@ importers:
       typescript: ^4.7.2
       webpack: ^5.72.1
     dependencies:
+      '@babel/runtime': 7.18.3
       ember-modifier: 3.2.7_@babel+core@7.18.2
       ember-popperjs: link:../../ember-popperjs
     devDependencies:
@@ -297,6 +301,7 @@ packages:
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /@babel/generator/7.18.2:
     resolution: {integrity: sha512-W1lG5vUwFvfMd8HVXqdfbuG7RuaSrTCCD8cl8fP8wOivdbtbIg2Db3IWUcgvfxKbbn6ZBGYRW/Zk1MIwK49mgw==}
@@ -475,6 +480,7 @@ packages:
       '@babel/types': 7.18.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /@babel/helper-optimise-call-expression/7.16.7:
     resolution: {integrity: sha512-EtgBhg7rd/JcnpZFXpBy0ze1YRfdm7BnBX4uKMBd3ixa3RGAE002JZB66FJyNH7g0F38U05pXmA5P8cBh7z+1w==}
@@ -600,6 +606,7 @@ packages:
       '@babel/types': 7.18.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /@babel/highlight/7.17.12:
     resolution: {integrity: sha512-7yykMVF3hfZY2jsHZEEgLc+3x4o1O+fYyULu11GynEUQNwB6lua+IIQn1FiJxNucd5UlyJryrwsOh8PL9Sn8Qg==}
@@ -794,7 +801,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.18.2_supports-color@8.1.1
+      '@babel/core': 7.18.2
       '@babel/helper-plugin-utils': 7.17.12
       '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3_@babel+core@7.18.2
 
@@ -837,7 +844,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.18.2_supports-color@8.1.1
+      '@babel/core': 7.18.2
       '@babel/helper-plugin-utils': 7.17.12
       '@babel/helper-skip-transparent-expression-wrappers': 7.16.0
       '@babel/plugin-syntax-optional-chaining': 7.8.3_@babel+core@7.18.2
@@ -986,7 +993,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.18.2_supports-color@8.1.1
+      '@babel/core': 7.18.2
       '@babel/helper-plugin-utils': 7.17.12
 
   /@babel/plugin-syntax-numeric-separator/7.10.4_@babel+core@7.18.2:
@@ -1018,7 +1025,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.18.2_supports-color@8.1.1
+      '@babel/core': 7.18.2
       '@babel/helper-plugin-utils': 7.17.12
 
   /@babel/plugin-syntax-private-property-in-object/7.14.5_@babel+core@7.18.2:
@@ -1821,6 +1828,7 @@ packages:
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /@babel/types/7.18.4:
     resolution: {integrity: sha512-ThN1mBcMq5pG/Vm2IcBmPPfyPXbd8S02rS+OBIDENdufvqC7Z/jHPCv9IcP01277aKtDI8g/2XysBN4hA8niiw==}
@@ -1908,7 +1916,7 @@ packages:
       - supports-color
     dev: true
 
-  /@embroider/addon-dev/1.7.1_rollup@2.75.3:
+  /@embroider/addon-dev/1.7.1_rollup@2.75.4:
     resolution: {integrity: sha512-SfpRB6AXa/n3/IhnGGq3OHEsmgx1SaC33clKngx2XA2rnxoiekXVB8gu0DCMGVl8bztMqprA/Uefkg4K2JpErA==}
     engines: {node: 12.* || 14.* || >= 16}
     hasBin: true
@@ -1918,7 +1926,7 @@ packages:
       assert-never: 1.2.1
       fs-extra: 10.1.0
       minimatch: 3.1.2
-      rollup-plugin-copy-assets: 2.0.3_rollup@2.75.3
+      rollup-plugin-copy-assets: 2.0.3_rollup@2.75.4
       rollup-plugin-delete: 2.0.0
       walk-sync: 3.0.0
       yargs: 17.5.1
@@ -3064,10 +3072,6 @@ packages:
 
   /@types/minimist/1.2.2:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
-    dev: true
-
-  /@types/node/16.11.36:
-    resolution: {integrity: sha512-FR5QJe+TaoZ2GsMHkjuwoNabr+UrJNRr2HNOo+r/7vhcuntM6Ee/pRPOnRhhL2XE9OOvX9VLEq+BcXl3VjNoWA==}
     dev: true
 
   /@types/node/17.0.36:
@@ -5609,7 +5613,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001344
-      electron-to-chromium: 1.4.141
+      electron-to-chromium: 1.4.142
       escalade: 3.1.1
       node-releases: 2.0.5
       picocolors: 1.0.0
@@ -5621,7 +5625,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001344
-      electron-to-chromium: 1.4.141
+      electron-to-chromium: 1.4.142
       escalade: 3.1.1
       node-releases: 2.0.5
       picocolors: 1.0.0
@@ -6090,9 +6094,9 @@ packages:
       dot-prop: 5.3.0
     dev: true
 
-  /compatfactory/0.0.13_typescript@4.7.2:
-    resolution: {integrity: sha512-k9Sl/Qal3xQPnjAFZaRpl7jlCh0hDEhVaxyiTMfiHKC/w5TYn4Nds+7340X/v1OrAQC5xGBtaD2JpWgPhXWaAw==}
-    engines: {node: '>=10.0.0'}
+  /compatfactory/1.0.1_typescript@4.7.2:
+    resolution: {integrity: sha512-hR9u0HSZTKDNNchPtMHg6myeNx0XO+av7UZIJPsi4rPALJBHi/W5Mbwi19hC/xm6y3JkYpxVYjTqnSGsU5X/iw==}
+    engines: {node: '>=14.9.0'}
     peerDependencies:
       typescript: '>=3.x || >= 4.x'
     dependencies:
@@ -6559,11 +6563,11 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  /crosspath/1.0.0:
-    resolution: {integrity: sha512-mpjkSErNO6vioL/Cde2aF4UBysPFEMyn+1AN1t7Oc4yqvzSRWe8iBte4P8BHyjo64OmC+ZBxwjIqmpSpIWiQ7Q==}
-    engines: {node: '>=10.0.0'}
+  /crosspath/2.0.0:
+    resolution: {integrity: sha512-ju88BYCQ2uvjO2bR+SsgLSTwTSctU+6Vp2ePbKPgSCZyy4MWZxYsT738DlKVRE5utUjobjPRm1MkTYKJxCmpTA==}
+    engines: {node: '>=14.9.0'}
     dependencies:
-      '@types/node': 16.11.36
+      '@types/node': 17.0.36
     dev: true
 
   /crypto-browserify/3.12.0:
@@ -6731,6 +6735,7 @@ packages:
     dependencies:
       ms: 2.1.2
       supports-color: 8.1.1
+    dev: true
 
   /decamelize-keys/1.1.0:
     resolution: {integrity: sha512-ocLWuYzRPoS9bfiSdDd3cxvrzovVMZnRDVEzAs+hWIVXGDbHxWMECij2OBuyB/An0FFW/nLuq6Kv1i/YC5Qfzg==}
@@ -6991,6 +6996,10 @@ packages:
 
   /electron-to-chromium/1.4.141:
     resolution: {integrity: sha512-mfBcbqc0qc6RlxrsIgLG2wCqkiPAjEezHxGTu7p3dHHFOurH4EjS9rFZndX5axC8264rI1Pcbw8uQP39oZckeA==}
+    dev: true
+
+  /electron-to-chromium/1.4.142:
+    resolution: {integrity: sha512-ea8Q1YX0JRp4GylOmX4gFHIizi0j9GfRW4EkaHnkZp0agRCBB4ZGeCv17IEzIvBkiYVwfoKVhKZJbTfqCRdQdg==}
 
   /elliptic/6.5.4:
     resolution: {integrity: sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ==}
@@ -9449,6 +9458,7 @@ packages:
   /has-flag/4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
+    dev: true
 
   /has-property-descriptors/1.0.0:
     resolution: {integrity: sha512-62DVLZGoiEBDHQyqG4w9xCuZ7eJEwNmJRWw2VY84Oedb7WFcA27fiEVe8oUQx9hAUJ4ekurquucTGwsyO1XGdQ==}
@@ -12896,13 +12906,13 @@ packages:
       inherits: 2.0.4
     dev: true
 
-  /rollup-plugin-copy-assets/2.0.3_rollup@2.75.3:
+  /rollup-plugin-copy-assets/2.0.3_rollup@2.75.4:
     resolution: {integrity: sha512-ETShhQGb9SoiwcNrvb3BhUNSGR89Jao0+XxxfzzLW1YsUzx8+rMO4z9oqWWmo6OHUmfNQRvqRj0cAyPkS9lN9w==}
     peerDependencies:
       rollup: '>=1.1.2'
     dependencies:
       fs-extra: 7.0.1
-      rollup: 2.75.3
+      rollup: 2.75.4
     dev: true
 
   /rollup-plugin-delete/2.0.0:
@@ -12912,13 +12922,14 @@ packages:
       del: 5.1.0
     dev: true
 
-  /rollup-plugin-ts/2.0.7_cyw4ulz4v6uakmaqjg253tfjem:
-    resolution: {integrity: sha512-M9sppRKX6y/b2KXbGdUdHid0tshAEK/sEeYLBHBJiBa4swukSsoFVXKGGZasLcjaXhgUnnizFuvFFj6znxwvSA==}
-    engines: {node: '>=10.0.0', npm: '>=7.0.0', pnpm: '>=3.2.0', yarn: '>=1.13'}
+  /rollup-plugin-ts/3.0.0_wrtyuusmf4ab33rxpvzwudiive:
+    resolution: {integrity: sha512-QeTtfTtywTUaunAdddjS73jSmTFVipIf0pvlUWN+u2o3dZDA7fvoDxuZ99SaCOg5t1AfOkQadjungy6Hxtljbg==}
+    engines: {node: '>=14.9.0', npm: '>=7.0.0', pnpm: '>=3.2.0', yarn: '>=1.13'}
     peerDependencies:
       '@babel/core': '>=6.x || >=7.x'
       '@babel/plugin-transform-runtime': '>=6.x || >=7.x'
       '@babel/preset-env': '>=6.x || >=7.x'
+      '@babel/preset-typescript': '>=6.x || >=7.x'
       '@babel/runtime': '>=6.x || >=7.x'
       '@swc/core': '>=1.x'
       '@swc/helpers': '>=0.2'
@@ -12931,6 +12942,8 @@ packages:
         optional: true
       '@babel/preset-env':
         optional: true
+      '@babel/preset-typescript':
+        optional: true
       '@babel/runtime':
         optional: true
       '@swc/core':
@@ -12939,22 +12952,23 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.18.2
+      '@babel/preset-typescript': 7.17.12_@babel+core@7.18.2
       '@rollup/pluginutils': 4.2.1
       '@wessberg/stringutil': 1.0.19
       browserslist: 4.20.3
       browserslist-generator: 1.0.66
-      chalk: 4.1.2
-      compatfactory: 0.0.13_typescript@4.7.2
-      crosspath: 1.0.0
+      chalk: 5.0.1
+      compatfactory: 1.0.1_typescript@4.7.2
+      crosspath: 2.0.0
       magic-string: 0.26.2
-      rollup: 2.75.3
-      ts-clone-node: 0.3.32_typescript@4.7.2
+      rollup: 2.75.4
+      ts-clone-node: 1.0.0_typescript@4.7.2
       tslib: 2.4.0
       typescript: 4.7.2
     dev: true
 
-  /rollup/2.75.3:
-    resolution: {integrity: sha512-YA29fLU6MAYSaDxIQYrGGOcbXlDmG96h0krGGYObroezcQ0KgEPM3+7MtKD/qeuUbFuAJXvKZee5dA1dpwq1PQ==}
+  /rollup/2.75.4:
+    resolution: {integrity: sha512-JgZiJMJkKImMZJ8ZY1zU80Z2bA/TvrL/7D9qcBCrfl2bP+HUaIw0QHUroB4E3gBpFl6CRFM1YxGbuYGtdAswbQ==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -13832,6 +13846,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       has-flag: 4.0.0
+    dev: true
 
   /supports-hyperlinks/2.2.0:
     resolution: {integrity: sha512-6sXEzV5+I5j8Bmq9/vUphGRM/RJNT9SCURJLjwfOg51heRtguGWDzcaBlgAzKhQa0EVNpPEKzQuBwZ8S8WaCeQ==}
@@ -14356,13 +14371,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ts-clone-node/0.3.32_typescript@4.7.2:
-    resolution: {integrity: sha512-YYGvoWy2Ba98/YC/0leD7IRsU/q5pu/KRg9dD8omzkbgoZ8g7gfYfED9mWMTyNp7J3CQiiKyvM62B7mXXHKU7Q==}
-    engines: {node: '>=10.0.0'}
+  /ts-clone-node/1.0.0_typescript@4.7.2:
+    resolution: {integrity: sha512-/cDYbr2HAXxFNeTT41c/xs/2bhLJjqnYheHsmA3AoHSt+n4JA4t0FL9Lk5O8kWnJ6jeB3kPcUoXIFtwERNzv6Q==}
+    engines: {node: '>=14.9.0'}
     peerDependencies:
       typescript: ^3.x || ^4.x
     dependencies:
-      compatfactory: 0.0.13_typescript@4.7.2
+      compatfactory: 1.0.1_typescript@4.7.2
       typescript: 4.7.2
     dev: true
 
