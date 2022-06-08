@@ -115,7 +115,7 @@
     },
     {
       // ensure maximum compatibility, when possible
-      "matchPaths": ["ember-aria-utilities/package.json"],
+      "matchPaths": ["ember-popperjs/package.json"],
       "matchDepTypes": ["dependencies"],
       "enabled": false
     },
