@@ -4,7 +4,8 @@
   "license": "MIT",
   "author": "NullVoxPopuli",
   "scripts": {
-    "build": "pnpm run --filter ember-popperjs build"
+    "build": "pnpm run --filter ember-popperjs build",
+    "ci:update": "npx ember-ci-update"
   },
   "volta": {
     "node": "16.15.0"

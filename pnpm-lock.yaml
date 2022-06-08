@@ -25,6 +25,7 @@ importers:
       '@popperjs/core': ^2.11.1
       '@semantic-release/changelog': ^6.0.1
       '@semantic-release/git': ^10.0.1
+      '@types/ember__application': ^4.0.0
       '@types/ember__component': ^4.0.4
       '@types/ember__destroyable': ^4.0.0
       '@types/ember__object': ^4.0.0
@@ -63,6 +64,7 @@ importers:
       '@nullvoxpopuli/eslint-configs': 2.2.20_typescript@4.7.2
       '@semantic-release/changelog': 6.0.1_semantic-release@19.0.2
       '@semantic-release/git': 10.0.1_semantic-release@19.0.2
+      '@types/ember__application': 4.0.0
       '@types/ember__component': 4.0.8
       '@types/ember__destroyable': 4.0.0
       '@types/ember__object': 4.0.2
@@ -299,6 +301,7 @@ packages:
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /@babel/generator/7.18.2:
     resolution: {integrity: sha512-W1lG5vUwFvfMd8HVXqdfbuG7RuaSrTCCD8cl8fP8wOivdbtbIg2Db3IWUcgvfxKbbn6ZBGYRW/Zk1MIwK49mgw==}
@@ -477,6 +480,7 @@ packages:
       '@babel/types': 7.18.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /@babel/helper-optimise-call-expression/7.16.7:
     resolution: {integrity: sha512-EtgBhg7rd/JcnpZFXpBy0ze1YRfdm7BnBX4uKMBd3ixa3RGAE002JZB66FJyNH7g0F38U05pXmA5P8cBh7z+1w==}
@@ -602,6 +606,7 @@ packages:
       '@babel/types': 7.18.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /@babel/highlight/7.17.12:
     resolution: {integrity: sha512-7yykMVF3hfZY2jsHZEEgLc+3x4o1O+fYyULu11GynEUQNwB6lua+IIQn1FiJxNucd5UlyJryrwsOh8PL9Sn8Qg==}
@@ -796,7 +801,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.18.2_supports-color@8.1.1
+      '@babel/core': 7.18.2
       '@babel/helper-plugin-utils': 7.17.12
       '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3_@babel+core@7.18.2
 
@@ -839,7 +844,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.18.2_supports-color@8.1.1
+      '@babel/core': 7.18.2
       '@babel/helper-plugin-utils': 7.17.12
       '@babel/helper-skip-transparent-expression-wrappers': 7.16.0
       '@babel/plugin-syntax-optional-chaining': 7.8.3_@babel+core@7.18.2
@@ -988,7 +993,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.18.2_supports-color@8.1.1
+      '@babel/core': 7.18.2
       '@babel/helper-plugin-utils': 7.17.12
 
   /@babel/plugin-syntax-numeric-separator/7.10.4_@babel+core@7.18.2:
@@ -1020,7 +1025,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/core': 7.18.2_supports-color@8.1.1
+      '@babel/core': 7.18.2
       '@babel/helper-plugin-utils': 7.17.12
 
   /@babel/plugin-syntax-private-property-in-object/7.14.5_@babel+core@7.18.2:
@@ -1823,6 +1828,7 @@ packages:
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /@babel/types/7.18.4:
     resolution: {integrity: sha512-ThN1mBcMq5pG/Vm2IcBmPPfyPXbd8S02rS+OBIDENdufvqC7Z/jHPCv9IcP01277aKtDI8g/2XysBN4hA8niiw==}
@@ -6729,6 +6735,7 @@ packages:
     dependencies:
       ms: 2.1.2
       supports-color: 8.1.1
+    dev: true
 
   /decamelize-keys/1.1.0:
     resolution: {integrity: sha512-ocLWuYzRPoS9bfiSdDd3cxvrzovVMZnRDVEzAs+hWIVXGDbHxWMECij2OBuyB/An0FFW/nLuq6Kv1i/YC5Qfzg==}
@@ -9451,6 +9458,7 @@ packages:
   /has-flag/4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
+    dev: true
 
   /has-property-descriptors/1.0.0:
     resolution: {integrity: sha512-62DVLZGoiEBDHQyqG4w9xCuZ7eJEwNmJRWw2VY84Oedb7WFcA27fiEVe8oUQx9hAUJ4ekurquucTGwsyO1XGdQ==}
@@ -13838,6 +13846,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       has-flag: 4.0.0
+    dev: true
 
   /supports-hyperlinks/2.2.0:
     resolution: {integrity: sha512-6sXEzV5+I5j8Bmq9/vUphGRM/RJNT9SCURJLjwfOg51heRtguGWDzcaBlgAzKhQa0EVNpPEKzQuBwZ8S8WaCeQ==}
