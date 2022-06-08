@@ -81,5 +81,8 @@
     "app/**/*",
     "tests/**/*",
     "types/**/*"
+  ],
+  "references": [
+    { "path": "../../ember-popperjs" }
   ]
 }
