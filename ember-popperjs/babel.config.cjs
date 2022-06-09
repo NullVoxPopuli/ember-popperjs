@@ -20,14 +20,6 @@ module.exports = {
         legacy: true,
       },
     ],
-    [
-      resolve('@babel/plugin-proposal-class-properties'),
-      {
-        // Only support browsers that also support class properties...
-        // If all addons do this, it greatly reduces shipped JS
-        loose: true,
-      },
-    ],
     // eslint-disable-next-line node/no-missing-require
     resolve('@embroider/addon-dev/template-colocation-plugin'),
   ],
