@@ -7,7 +7,7 @@
     "build": "pnpm run --filter ember-popperjs build"
   },
   "volta": {
-    "node": "16.15.1"
+    "node": "16.15.0"
   },
   "packageManager": "pnpm@7.4.1",
   "pnpm": {
