@@ -15,7 +15,7 @@ import type { Options, Placement } from '@popperjs/core';
 interface Signature {
   Args: {
     placement?: Placement;
-    options?: Options | ((reference: HTMLElement, popover: HTMLElement) => Options);
+    options?: Options | ((reference: Element, popover: Element) => Options);
   };
   Blocks: {
     default: [PopperJS['trigger'], PopperJS['popover']];
@@ -37,15 +37,15 @@ interface Signature {
  *
  */
 export class PopperJS extends Component<Signature> {
-  declare _referenceElement?: HTMLElement;
-  declare _popoverElement?: HTMLElement;
+  declare _referenceElement?: Element;
+  declare _popoverElement?: Element;
   declare _popper?: ReturnType<typeof createPopper>;
 
   // This is yielded out, but it's not public API
   @tracked isShown = false;
 
   trigger = modifier(
-    (element: HTMLElement) => {
+    (element: Element) => {
       this._referenceElement = element;
 
       if (this._popoverElement) this.positionPopover();
@@ -60,7 +60,7 @@ export class PopperJS extends Component<Signature> {
   );
 
   popover = modifier(
-    (element: HTMLElement) => {
+    (element: Element) => {
       this._popoverElement = element;
 
       if (this._referenceElement) this.positionPopover();
