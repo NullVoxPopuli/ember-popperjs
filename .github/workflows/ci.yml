@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: volta-cli/action@v2
+      - uses: volta-cli/action@v4
       - name: Cache pnpm modules
         uses: actions/cache@v3
         with:
@@ -42,7 +42,7 @@ jobs:
           - ./testing/test-app
     steps:
       - uses: actions/checkout@v3
-      - uses: volta-cli/action@v2
+      - uses: volta-cli/action@v4
       - name: Cache pnpm modules
         uses: actions/cache@v3
         with:
@@ -64,7 +64,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: volta-cli/action@v2
+      - uses: volta-cli/action@v4
       - uses: wagoid/commitlint-github-action@v5.0.2
   build:
     name: Build Tests
@@ -74,7 +74,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: volta-cli/action@v2
+      - uses: volta-cli/action@v4
       - name: Cache pnpm modules
         uses: actions/cache@v3
         with:
@@ -115,7 +115,7 @@ jobs:
       - build
     steps:
       - uses: actions/checkout@v3
-      - uses: volta-cli/action@v2
+      - uses: volta-cli/action@v4
       - name: Cache pnpm modules
         uses: actions/cache@v3
         with:
@@ -141,7 +141,7 @@ jobs:
       - build
     steps:
       - uses: actions/checkout@v3
-      - uses: volta-cli/action@v2
+      - uses: volta-cli/action@v4
       - name: Cache pnpm modules
         uses: actions/cache@v3
         with:
@@ -179,7 +179,7 @@ jobs:
           - embroider-optimized
     steps:
       - uses: actions/checkout@v3
-      - uses: volta-cli/action@v2
+      - uses: volta-cli/action@v4
       - name: Cache pnpm modules
         uses: actions/cache@v3
         with:
@@ -218,7 +218,7 @@ jobs:
           - typescript@next
     steps:
       - uses: actions/checkout@v3
-      - uses: volta-cli/action@v2
+      - uses: volta-cli/action@v4
       - name: Cache pnpm modules
         uses: actions/cache@v3
         with:
@@ -256,7 +256,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           persist-credentials: false
-      - uses: volta-cli/action@v2
+      - uses: volta-cli/action@v4
       - name: Cache pnpm modules
         uses: actions/cache@v3
         with:
