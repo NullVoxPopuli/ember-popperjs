@@ -97,6 +97,7 @@ importers:
       '@embroider/webpack': ^1.2.0
       '@glimmer/component': ^1.1.2
       '@glimmer/tracking': ^1.1.2
+      '@tsconfig/ember': ^1.0.1
       '@types/ember': ^4.0.0
       '@types/ember-data': ^4.0.0
       '@types/ember-data__adapter': ^4.0.0
@@ -170,6 +171,7 @@ importers:
       '@embroider/webpack': 1.9.0_4mpovkaptyark33dbwnkp36cwi
       '@glimmer/component': 1.1.2_@babel+core@7.19.3
       '@glimmer/tracking': 1.1.2
+      '@tsconfig/ember': 1.0.1
       '@types/ember': 4.0.0
       '@types/ember-data': 4.4.4
       '@types/ember-data__adapter': 4.0.0
@@ -1988,8 +1990,8 @@ packages:
     resolution: {integrity: sha512-0xTQLZEAuGeMiZq4tF3KFlP4R/r1js7qq2QEQ89bhEDI8yKCDBScvPrpSpaT6aZj8bWByjDvXHFuSpInFl5gww==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
-      '@embroider/shared-internals': 1.7.1
-      semver: 7.3.7
+      '@embroider/shared-internals': 1.8.3
+      semver: 7.3.8
     dev: false
 
   /@embroider/babel-loader-8/1.9.0_bbowje72cdeg2f2jpbsoqlvcye:
@@ -2126,20 +2128,6 @@ packages:
       semver: 7.3.8
     transitivePeerDependencies:
       - supports-color
-
-  /@embroider/shared-internals/1.7.1:
-    resolution: {integrity: sha512-qT7i3EnOogwvi6xRl7wjJmx27rLlUZG6B6HJXAKXvZOyGFVs0GnQKIJX+7zX2PZAcqlpqhmdWm9MPdrof0dj5g==}
-    engines: {node: 12.* || 14.* || >= 16}
-    dependencies:
-      babel-import-util: 1.2.2
-      ember-rfc176-data: 0.3.17
-      fs-extra: 9.1.0
-      js-string-escape: 1.0.1
-      lodash: 4.17.21
-      resolve-package-path: 4.0.3
-      semver: 7.3.8
-      typescript-memoize: 1.1.0
-    dev: false
 
   /@embroider/shared-internals/1.8.3:
     resolution: {integrity: sha512-N5Gho6Qk8z5u+mxLCcMYAoQMbN4MmH+z2jXwQHVs859bxuZTxwF6kKtsybDAASCtd2YGxEmzcc1Ja/wM28824w==}
@@ -2824,6 +2812,10 @@ packages:
   /@tootallnate/once/2.0.0:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
     engines: {node: '>= 10'}
+    dev: true
+
+  /@tsconfig/ember/1.0.1:
+    resolution: {integrity: sha512-aPzLw5BfQxsFPrh5fNDOK4SbSkp2q5fMlrKVeniVjMz1lAcyOh2eH5THkKKcBi1YN1/fbMdAWN/dKGW6lg2+8g==}
     dev: true
 
   /@types/babel__code-frame/7.0.3:
@@ -13078,6 +13070,7 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: true
 
   /semver/7.3.8:
     resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
@@ -14307,10 +14300,6 @@ packages:
   /typedarray/0.0.6:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
     dev: true
-
-  /typescript-memoize/1.1.0:
-    resolution: {integrity: sha512-LQPKVXK8QrBBkL/zclE6YgSWn0I8ew5m0Lf+XL00IwMhlotqRLlzHV+BRrljVQIc+NohUAuQP7mg4HQwrx5Xbg==}
-    dev: false
 
   /typescript-memoize/1.1.1:
     resolution: {integrity: sha512-GQ90TcKpIH4XxYTI2F98yEQYZgjNMOGPpOgdjIBhaLaWji5HPWlRnZ4AeA1hfBxtY7bCGDJsqDDHk/KaHOl5bA==}
