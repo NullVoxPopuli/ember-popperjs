@@ -4,16 +4,14 @@ template: "v2-addon"
 # ---------------------
 
 addon: './ember-popperjs'
-testApp: './testing/test-app'
+testApp: './test-app'
 
 lint:
   commits: true
-  eslint:
-    - "./ember-popperjs"
-    - "./testing/test-app"
+  cmd: 'pnpm lint'
 
 build:
-  run: 'pnpm run build:js'
+  run: 'pnpm build:js'
   expect: |
     _app_/components/popper-j-s.js
     index.js
@@ -30,17 +28,10 @@ support:
     - typescript@4.5
     - typescript@4.6
     - typescript@4.7
+    - typescript@4.8
     - typescript@next
 
-  ember-try:
-    - ember-3.28
-    - ember-4.0
-    - ember-4.4
-    - ember-release
-    - ember-beta
-    - ember-canary
-    - embroider-safe
-    - embroider-optimized
+  ember-try: true
 
 release:
   semantic: true

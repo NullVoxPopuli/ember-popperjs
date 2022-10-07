@@ -4,12 +4,14 @@
   "license": "MIT",
   "author": "NullVoxPopuli",
   "scripts": {
-    "build": "pnpm run --filter ember-popperjs build"
+    "build": "pnpm --filter ember-popperjs build",
+    "lint": "pnpm --filter '*' lint",
+    "lint:fix": "pnpm --filter '*' lint:fix"
   },
   "volta": {
     "node": "16.17.0"
   },
-  "packageManager": "pnpm@7.9.0",
+  "packageManager": "pnpm@7",
   "pnpm": {
     "overrides": {
       "@types/eslint": "7.29.0",

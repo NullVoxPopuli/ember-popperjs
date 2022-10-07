@@ -24,7 +24,12 @@
   },
   "dependencies": {
     "ember-modifier": "^3.2.7",
-    "ember-popperjs": "*"
+    "ember-popperjs": "workspace:*"
+  },
+  "dependenciesMeta": {
+    "ember-popperjs": {
+      "injected": true
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
