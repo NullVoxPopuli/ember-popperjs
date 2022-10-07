@@ -1,11 +1,7 @@
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-import { setComponentTemplate } from '@ember/component';
 import { isDestroyed, isDestroying, registerDestructor } from '@ember/destroyable';
 import { action } from '@ember/object';
-import { hbs } from 'ember-cli-htmlbars';
 
 import { createPopper } from '@popperjs/core';
 import { modifier } from 'ember-modifier';
@@ -105,13 +101,6 @@ export class PopperJS extends Component<Signature> {
     });
   }
 }
-
-setComponentTemplate(
-  hbs`
-    {{yield this.trigger this.popover this.isShown}}
-  `,
-  PopperJS
-);
 
 export default PopperJS;
 

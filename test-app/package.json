@@ -24,7 +24,12 @@
   },
   "dependencies": {
     "ember-modifier": "^3.2.7",
-    "ember-popperjs": "*"
+    "ember-popperjs": "workspace:*"
+  },
+  "dependenciesMeta": {
+    "ember-popperjs": {
+      "injected": true
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -36,6 +41,7 @@
     "@embroider/webpack": "^1.2.0",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
+    "@tsconfig/ember": "^1.0.1",
     "@types/ember": "^4.0.0",
     "@types/ember-data": "^4.0.0",
     "@types/ember-data__adapter": "^4.0.0",
@@ -81,7 +87,7 @@
     "ember-source-channel-url": "^3.0.0",
     "ember-template-lint": "^4.0.0",
     "ember-try": "^2.0.0",
-    "eslint": "^8.0.0",
+    "eslint": "^7.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-ember": "^11.0.0",
     "eslint-plugin-node": "^11.1.0",
