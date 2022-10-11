@@ -20,7 +20,7 @@ runs:
           components/popper-j-s.js.map
           components/popper-j-s.d.ts
           components/popper-j-s.d.ts.map
-
+          
       ' >> assert-contents.config.yml
       npx assert-folder-contents
 

@@ -6,6 +6,9 @@ template: "v2-addon"
 addon: './ember-popperjs'
 testApp: './test-app'
 
+# https://github.com/pnpm/pnpm/issues/4965
+fixes: ['pnpm#4965']
+
 lint:
   commits: true
   cmd: 'pnpm lint'
