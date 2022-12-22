@@ -97,7 +97,7 @@ importers:
       '@embroider/webpack': ^2.0.0
       '@glimmer/component': ^1.1.2
       '@glimmer/tracking': ^1.1.2
-      '@tsconfig/ember': ^1.0.1
+      '@tsconfig/ember': ^2.0.0
       '@types/ember': ^4.0.0
       '@types/ember-data': ^4.0.0
       '@types/ember-data__adapter': ^4.0.0
@@ -171,7 +171,7 @@ importers:
       '@embroider/webpack': 2.0.0_y2nm7o5loizifxat4pmnjmz3we
       '@glimmer/component': 1.1.2_@babel+core@7.19.3
       '@glimmer/tracking': 1.1.2
-      '@tsconfig/ember': 1.0.1
+      '@tsconfig/ember': 2.0.0
       '@types/ember': 4.0.0
       '@types/ember-data': 4.4.4
       '@types/ember-data__adapter': 4.0.0
@@ -2698,8 +2698,8 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /@tsconfig/ember/1.0.1:
-    resolution: {integrity: sha512-aPzLw5BfQxsFPrh5fNDOK4SbSkp2q5fMlrKVeniVjMz1lAcyOh2eH5THkKKcBi1YN1/fbMdAWN/dKGW6lg2+8g==}
+  /@tsconfig/ember/2.0.0:
+    resolution: {integrity: sha512-RzbDYYcjxVdG8Ki0xe99HN3+nHTZe6EBgw6N7B3yup7QogVFQQxA9nY7X80j1XzF15xqetwWiYfAjv5lkkp0/A==}
     dev: true
 
   /@types/babel__code-frame/7.0.3:
