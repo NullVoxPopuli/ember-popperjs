@@ -141,7 +141,7 @@ importers:
       ember-popperjs: workspace:*
       ember-qunit: ^6.0.0
       ember-resolver: ^8.0.3
-      ember-source: ~4.9.0
+      ember-source: ~4.10.0
       ember-source-channel-url: ^3.0.0
       ember-template-lint: ^4.0.0
       ember-try: ^2.0.0
@@ -160,11 +160,11 @@ importers:
       webpack: ^5.72.1
     dependencies:
       ember-modifier: 3.2.7_@babel+core@7.19.3
-      ember-popperjs: file:ember-popperjs_fvttdy5ke7r76r6islsmztepfa
+      ember-popperjs: file:ember-popperjs_q3egjsubuhzy3cqti7way3q4ra
     devDependencies:
       '@babel/core': 7.19.3
       '@ember/optional-features': 2.0.0
-      '@ember/test-helpers': 2.8.1_lemwl2prpo4z27khz4q5gosf7q
+      '@ember/test-helpers': 2.8.1_z3u7zatrjqxwwfxbjfyblpzosm
       '@embroider/compat': 2.0.0_@embroider+core@2.0.0
       '@embroider/core': 2.0.0
       '@embroider/test-setup': 2.0.0
@@ -213,7 +213,7 @@ importers:
       ember-load-initializers: 2.1.2_@babel+core@7.19.3
       ember-qunit: 6.0.0_q2umwxufvnpx3vgxqbnuszsnxm
       ember-resolver: 8.0.3_@babel+core@7.19.3
-      ember-source: 4.9.0_zdxgkgqlrodn7l3e6kyjrbkczu
+      ember-source: 4.10.0_zdxgkgqlrodn7l3e6kyjrbkczu
       ember-source-channel-url: 3.0.0
       ember-template-lint: 4.14.0_ember-cli-htmlbars@6.0.1
       ember-try: 2.0.0
@@ -1864,7 +1864,7 @@ packages:
       - supports-color
     dev: true
 
-  /@ember/test-helpers/2.8.1_lemwl2prpo4z27khz4q5gosf7q:
+  /@ember/test-helpers/2.8.1_z3u7zatrjqxwwfxbjfyblpzosm:
     resolution: {integrity: sha512-jbsYwWyAdhL/pdPu7Gb3SG1gvIXY70FWMtC/Us0Kmvk82Y+5YUQ1SOC0io75qmOGYQmH7eQrd/bquEVd+4XtdQ==}
     engines: {node: 10.* || 12.* || 14.* || 15.* || >= 16.*}
     peerDependencies:
@@ -1872,13 +1872,13 @@ packages:
     dependencies:
       '@ember/test-waiters': 3.0.2
       '@embroider/macros': 1.9.0
-      '@embroider/util': 1.9.0_ember-source@4.9.0
+      '@embroider/util': 1.9.0_ember-source@4.10.0
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 5.7.2
       ember-destroyable-polyfill: 2.0.3_@babel+core@7.19.3
-      ember-source: 4.9.0_zdxgkgqlrodn7l3e6kyjrbkczu
+      ember-source: 4.10.0_zdxgkgqlrodn7l3e6kyjrbkczu
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -2108,7 +2108,7 @@ packages:
       resolve: 1.22.1
     dev: true
 
-  /@embroider/util/1.9.0_ember-source@4.9.0:
+  /@embroider/util/1.9.0_ember-source@4.10.0:
     resolution: {integrity: sha512-9I63iJK6N01OHJafmS/BX0msUkTlmhFMIEmDl/SRNACVi0nS6QfNyTgTTeji1P/DALf6eobg/9t/N4VhS9G9QA==}
     engines: {node: 12.* || 14.* || >= 16}
     peerDependencies:
@@ -2117,7 +2117,7 @@ packages:
       '@embroider/macros': 1.10.0
       broccoli-funnel: 3.0.8
       ember-cli-babel: 7.26.11
-      ember-source: 4.9.0_zdxgkgqlrodn7l3e6kyjrbkczu
+      ember-source: 4.10.0_zdxgkgqlrodn7l3e6kyjrbkczu
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6810,7 +6810,7 @@ packages:
       '@ember/test-helpers': ^2.4.0
       qunit: ^2.13.0
     dependencies:
-      '@ember/test-helpers': 2.8.1_lemwl2prpo4z27khz4q5gosf7q
+      '@ember/test-helpers': 2.8.1_z3u7zatrjqxwwfxbjfyblpzosm
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 3.0.2
       common-tags: 1.8.2
@@ -6864,8 +6864,8 @@ packages:
       - encoding
     dev: true
 
-  /ember-source/4.9.0_zdxgkgqlrodn7l3e6kyjrbkczu:
-    resolution: {integrity: sha512-TYwOpHbZKBSHaBEQSWZrUjj2lOBlARmUdENGaImT941T9wwdDyfdi0/6Nu3MIQs/eEVcBfUusT5PAC+rIUu3Tw==}
+  /ember-source/4.10.0_zdxgkgqlrodn7l3e6kyjrbkczu:
+    resolution: {integrity: sha512-Y7+M+vSygMrpq4szsnpik3PxdVVA7ApuwU2L/l9Os+qpPqIKy4hT0Rw/17z4b87HNEX03jv7ueMbgcpxjUf1Kw==}
     engines: {node: '>= 14.*'}
     peerDependencies:
       '@glimmer/component': ^1.1.2
@@ -13673,7 +13673,7 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  file:ember-popperjs_fvttdy5ke7r76r6islsmztepfa:
+  file:ember-popperjs_q3egjsubuhzy3cqti7way3q4ra:
     resolution: {directory: ember-popperjs, type: directory}
     id: file:ember-popperjs
     name: ember-popperjs
@@ -13685,5 +13685,5 @@ packages:
       '@embroider/addon-shim': 1.7.1
       '@popperjs/core': 2.11.5
       ember-modifier: 3.2.7_@babel+core@7.19.3
-      ember-source: 4.9.0_zdxgkgqlrodn7l3e6kyjrbkczu
+      ember-source: 4.10.0_zdxgkgqlrodn7l3e6kyjrbkczu
     dev: false
