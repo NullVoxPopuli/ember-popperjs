@@ -9,7 +9,7 @@
     "lint:fix": "pnpm --filter '*' lint:fix"
   },
   "volta": {
-    "node": "18.14.1"
+    "node": "18.14.2"
   },
   "packageManager": "pnpm@7",
   "pnpm": {
