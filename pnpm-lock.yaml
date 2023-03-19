@@ -12,6 +12,7 @@ importers:
   ember-popperjs:
     specifiers:
       '@babel/core': ^7.18.2
+      '@babel/eslint-parser': ^7.11.0
       '@babel/plugin-proposal-class-properties': ^7.17.12
       '@babel/plugin-proposal-decorators': ^7.18.2
       '@babel/plugin-syntax-decorators': ^7.17.12
@@ -28,7 +29,6 @@ importers:
       '@types/ember__component': ^4.0.4
       '@types/ember__destroyable': ^4.0.0
       '@types/ember__object': ^4.0.0
-      babel-eslint: ^10.1.0
       concurrently: ^7.2.1
       ember-cli-htmlbars: ^6.0.0
       ember-modifier: ^3.2.7
@@ -52,6 +52,7 @@ importers:
       '@popperjs/core': 2.11.5
     devDependencies:
       '@babel/core': 7.18.2
+      '@babel/eslint-parser': 7.21.3_k2frvhnwhyewn52hbgubltwwhi
       '@babel/plugin-proposal-class-properties': 7.17.12_@babel+core@7.18.2
       '@babel/plugin-proposal-decorators': 7.18.2_@babel+core@7.18.2
       '@babel/plugin-syntax-decorators': 7.17.12_@babel+core@7.18.2
@@ -66,13 +67,12 @@ importers:
       '@types/ember__component': 4.0.8
       '@types/ember__destroyable': 4.0.0
       '@types/ember__object': 4.0.2
-      babel-eslint: 10.1.0_eslint@7.32.0
       concurrently: 7.2.1
       ember-cli-htmlbars: 6.0.1
       ember-modifier: 3.2.7_@babel+core@7.18.2
       eslint: 7.32.0
       eslint-config-prettier: 8.5.0_eslint@7.32.0
-      eslint-plugin-decorator-position: 5.0.1_eslint@7.32.0
+      eslint-plugin-decorator-position: 5.0.1_af4rrcfmmyurbru6my64xfjxvu
       eslint-plugin-ember: 11.0.5_eslint@7.32.0
       eslint-plugin-import: 2.26.0_eslint@7.32.0
       eslint-plugin-json: 3.1.0
@@ -89,6 +89,7 @@ importers:
   test-app:
     specifiers:
       '@babel/core': ^7.0.0
+      '@babel/eslint-parser': ^7.11.0
       '@ember/optional-features': ^2.0.0
       '@ember/test-helpers': ^2.6.0
       '@embroider/compat': ^2.0.0
@@ -126,7 +127,6 @@ importers:
       '@types/htmlbars-inline-precompile': ^3.0.0
       '@types/qunit': ^2.11.3
       '@types/rsvp': ^4.0.4
-      babel-eslint: ^10.1.0
       broccoli-asset-rev: ^3.0.0
       ember-auto-import: ^2.4.2
       ember-cli: ~4.11.0
@@ -163,6 +163,7 @@ importers:
       ember-popperjs: file:ember-popperjs_iqsbz2ofngdiq3ui67wsfqysnu
     devDependencies:
       '@babel/core': 7.19.3
+      '@babel/eslint-parser': 7.21.3_mmbyq476xpa6tuwz6732ekfpz4
       '@ember/optional-features': 2.0.0
       '@ember/test-helpers': 2.8.1_z7x4pxf7d7uojq4ak4bdxxa4pu
       '@embroider/compat': 2.0.0_@embroider+core@2.0.0
@@ -200,7 +201,6 @@ importers:
       '@types/htmlbars-inline-precompile': 3.0.0
       '@types/qunit': 2.19.3
       '@types/rsvp': 4.0.4
-      babel-eslint: 10.1.0_eslint@7.32.0
       broccoli-asset-rev: 3.0.0
       ember-auto-import: 2.4.2_webpack@5.74.0
       ember-cli: 4.11.0
@@ -400,6 +400,34 @@ packages:
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
+
+  /@babel/eslint-parser/7.21.3_k2frvhnwhyewn52hbgubltwwhi:
+    resolution: {integrity: sha512-kfhmPimwo6k4P8zxNs8+T7yR44q1LdpsZdE1NkCsVlfiuTPRfnGgjaF8Qgug9q9Pou17u6wneYF0lDCZJATMFg==}
+    engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
+    peerDependencies:
+      '@babel/core': '>=7.11.0'
+      eslint: ^7.5.0 || ^8.0.0
+    dependencies:
+      '@babel/core': 7.18.2
+      '@nicolo-ribaudo/eslint-scope-5-internals': 5.1.1-v1
+      eslint: 7.32.0
+      eslint-visitor-keys: 2.1.0
+      semver: 6.3.0
+    dev: true
+
+  /@babel/eslint-parser/7.21.3_mmbyq476xpa6tuwz6732ekfpz4:
+    resolution: {integrity: sha512-kfhmPimwo6k4P8zxNs8+T7yR44q1LdpsZdE1NkCsVlfiuTPRfnGgjaF8Qgug9q9Pou17u6wneYF0lDCZJATMFg==}
+    engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
+    peerDependencies:
+      '@babel/core': '>=7.11.0'
+      eslint: ^7.5.0 || ^8.0.0
+    dependencies:
+      '@babel/core': 7.19.3
+      '@nicolo-ribaudo/eslint-scope-5-internals': 5.1.1-v1
+      eslint: 7.32.0
+      eslint-visitor-keys: 2.1.0
+      semver: 6.3.0
+    dev: true
 
   /@babel/generator/7.18.2:
     resolution: {integrity: sha512-W1lG5vUwFvfMd8HVXqdfbuG7RuaSrTCCD8cl8fP8wOivdbtbIg2Db3IWUcgvfxKbbn6ZBGYRW/Zk1MIwK49mgw==}
@@ -3412,6 +3440,12 @@ packages:
 
   /@mdn/browser-compat-data/4.2.1:
     resolution: {integrity: sha512-EWUguj2kd7ldmrF9F+vI5hUOralPd+sdsUnYbRy33vZTuZkduC1shE9TtEMEjAQwyfyMb4ole5KtjF8MsnQOlA==}
+    dev: true
+
+  /@nicolo-ribaudo/eslint-scope-5-internals/5.1.1-v1:
+    resolution: {integrity: sha512-54/JRvkLIzzDWshCWfuhadfrfZVPiElY8Fcgmg1HroEly/EDSszzhBAsarCux+D/kOslTRquNzuyGSmUSTTHGg==}
+    dependencies:
+      eslint-scope: 5.1.1
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -8387,7 +8421,7 @@ packages:
       snake-case: 3.0.4
     dev: true
 
-  /eslint-plugin-decorator-position/5.0.1_eslint@7.32.0:
+  /eslint-plugin-decorator-position/5.0.1_af4rrcfmmyurbru6my64xfjxvu:
     resolution: {integrity: sha512-2VI4qzKhdIvWR/+VIsIcUQLVS49E5/LNOKHccV+di23IqeY0JRTefjSAuHpsEjF/KTEciH2LVsxFltgV1/kw2w==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -8398,6 +8432,7 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.18.9
+      '@babel/eslint-parser': 7.21.3_k2frvhnwhyewn52hbgubltwwhi
       '@babel/plugin-proposal-decorators': 7.18.10_@babel+core@7.18.9
       '@ember-data/rfc395-data': 0.0.4
       ember-rfc176-data: 0.3.17
