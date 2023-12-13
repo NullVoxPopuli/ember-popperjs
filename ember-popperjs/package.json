@@ -81,7 +81,7 @@
     "rollup-plugin-ts": "^2.0.7",
     "semantic-release": "^19.0.2",
     "tslib": "^2.4.0",
-    "typescript": "^4.5.5"
+    "typescript": "^5.0.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
