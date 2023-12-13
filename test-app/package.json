@@ -23,7 +23,7 @@
     "test:ember": "ember test"
   },
   "dependencies": {
-    "ember-modifier": "^3.2.7",
+    "ember-modifier": "^4.0.0",
     "ember-popperjs": "workspace:*"
   },
   "dependenciesMeta": {
