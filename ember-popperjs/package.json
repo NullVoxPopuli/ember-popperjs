@@ -78,7 +78,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "prettier": "^2.0.0",
     "rollup": "^2.75.3",
-    "rollup-plugin-ts": "^2.0.7",
+    "rollup-plugin-ts": "^3.0.0",
     "semantic-release": "^19.0.2",
     "tslib": "^2.4.0",
     "typescript": "^4.5.5"
