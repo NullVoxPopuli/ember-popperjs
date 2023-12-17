@@ -11,7 +11,7 @@
   "volta": {
     "node": "18.15.0"
   },
-  "packageManager": "pnpm@7",
+  "packageManager": "pnpm@8",
   "pnpm": {
     "overrides": {
       "@types/eslint": "7.29.0",
