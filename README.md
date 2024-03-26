@@ -1,5 +1,11 @@
 # ember-popperjs
 
+## Deprecation notice
+
+This addon is deprecated. [Popperjs](https://www.npmjs.com/package/@popperjs/core) is on the way out -- deprecated by its owners, in favor of [floating-ui](https://github.com/floating-ui/floating-ui), which is what [ember-velcro](https://github.com/CrowdStrike/ember-velcro). If you're looking for a popover/tooltip addon for EmberJS, you should take a look at [ember-velcro](https://github.com/CrowdStrike/ember-velcro).
+
+---
+
 [![npm version](https://badge.fury.io/js/ember-popperjs.svg)](https://badge.fury.io/js/ember-popperjs)
 [![CI](https://github.com/NullVoxPopuli/ember-popperjs/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/NullVoxPopuli/ember-popperjs/actions/workflows/ci.yml)
 
